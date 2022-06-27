@@ -1,0 +1,60 @@
+name: pull and process data from stocksmart website
+
+on:
+#  schedule:
+#    - cron: "0 0 0 0 7"
+
+#workflow_dispatch:
+  push:
+    - main
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      R_REMOTES_NO_ERRORS_FROM_WARNINGS: false
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Install command line packages
+        run: |
+          sudo apt update
+          sudo apt-get install  libgdal-dev libcurl4-gnutls-dev libgit2-dev libudunits2-dev libharfbuzz-dev libfribidi-dev
+        shell: bash
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@master
+        with:
+          r-version: '4.2'
+
+      - name: Install packages
+        run: |
+          install.packages(c("magrittr", "dplyr", "httr", "jsonlite", "here"))
+          install.packages(c("tibble", "readxl", "usethis"))
+        shell: Rscript {0}
+
+      - name: Pull stocksmart data
+        run: |
+          options(timeout = 60 * 60 * 6)
+          source(here::here("data-raw/query_stocksmart_api.R"))'
+          query_stock_smart_api()
+        shell: Rscript {0}
+
+      - name: Process stocksmart data
+        run: |
+          options(timeout = 60 * 60 * 6)
+          source(here::here("data-raw/process_stocksmart_ts_data.R"))'
+          process_stock_smarttest(exportFile=TRUE)
+        shell: Rscript {0}
+
+      - name: commit data files
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "generated"
+          git push
