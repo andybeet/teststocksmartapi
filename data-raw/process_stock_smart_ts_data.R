@@ -6,6 +6,7 @@
 #'
 #'
 
+
 library(magrittr)
 source(here::here("data-raw","process_stock_smart_summary_data.R"))
 
@@ -76,6 +77,7 @@ process_stock_smart_ts_data <- function(exportFile=F) {
   }
 
   return(stockAssessmentData)
+
 }
 
 
