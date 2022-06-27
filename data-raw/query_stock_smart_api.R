@@ -7,7 +7,7 @@
 
 library(magrittr)
 
-query_stocksmart_api <- function() {
+query_stock_smart_api <- function() {
 #tictoc::tic()
   ## 1. Get all entries (stockids and names)
   allids <- list()
