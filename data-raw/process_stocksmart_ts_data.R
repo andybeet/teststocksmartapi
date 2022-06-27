@@ -8,7 +8,7 @@
 
 
 library(magrittr)
-source(here::here("data-raw","process_stock_smart_summary_data.R"))
+source(here::here("data-raw","process_stocksmart_summary_data.R"))
 
 read_assessment_files <- function(){
   files <- list.files(here::here("data-raw","allAssessments"),pattern="\\.xlsx$") %>%
