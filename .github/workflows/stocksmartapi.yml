@@ -49,6 +49,8 @@ jobs:
           options(timeout = 60 * 60 * 6)
           source(here::here("data-raw/process_stocksmart_ts_data.R"))
           process_stocksmart_ts_data(exportFile=TRUE)
+#         incorporate difference check (below) prior to writing to repo or save as RDS and
+#         and write to repo later
         shell: Rscript {0}
 
       - name: Check for differences between data pull & existing
