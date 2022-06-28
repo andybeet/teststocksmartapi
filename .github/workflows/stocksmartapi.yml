@@ -51,6 +51,12 @@ jobs:
           process_stocksmart_ts_data(exportFile=TRUE)
         shell: Rscript {0}
 
+      - name: Check for differences between data pull & existing
+      # If same then need to exit without commit
+
+      - name: Find differences
+      # Create text explaining differences and append to news.md and release notes
+
       - name: commit data files
         run: |
           git config user.name github-actions
@@ -59,13 +65,13 @@ jobs:
           git commit -m "automated commit from api yml"
           git push
 
-      - name: Autoincrement a new patch version
-        run: |
-          echo "NEW_PATCH_VERSION=$((${{ env.PATCH_VERSION }}+1))" >> $GITHUB_ENV
-      - name: Update patch version
-        uses: hmanzur/actions-set-secret@v2.0.0
-        with:
-          name: 'PATCH_VERSION'
-          value: ${{ env.NEW_PATCH_VERSION }}
-          repository: ${{ github.repository }}
-          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+#       - name: Autoincrement a new patch version
+      #   run: |
+      #     echo "NEW_PATCH_VERSION=$((${{ env.PATCH_VERSION }}+1))" >> $GITHUB_ENV
+      # - name: Update patch version
+      #   uses: hmanzur/actions-set-secret@v2.0.0
+      #   with:
+      #     name: 'PATCH_VERSION'
+      #     value: ${{ env.NEW_PATCH_VERSION }}
+      #     repository: ${{ github.repository }}
+      #     token: ${{ secrets.REPO_ACCESS_TOKEN }}
