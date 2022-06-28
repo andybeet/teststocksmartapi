@@ -53,10 +53,10 @@ jobs:
 #         and write to repo later
         shell: Rscript {0}
 
-      - name: Check for differences between data pull & existing
+      #- name: Check for differences between data pull & existing
       # If same then need to exit without commit
 
-      - name: Find differences
+      #- name: Find differences
       # Create text explaining differences and append to news.md and release notes
 
       - name: commit data files
