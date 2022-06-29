@@ -3,3 +3,6 @@
 .RData
 .Ruserdata
 *.Rproj
+
+# folders
+data-raw/allAssessments
