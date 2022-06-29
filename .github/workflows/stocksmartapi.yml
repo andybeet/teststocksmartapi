@@ -65,7 +65,7 @@ jobs:
           git config user.email github-actions@github.com
           git add data/\*.rda
           git add data-raw/datapull.txt
-          git add data-raw/Assessment_summary_data.xlsx
+          git add data-raw/Assessment_Summary_Data.xlsx
           git commit -m "automated commit from api yml"
           git push
 
