@@ -19,12 +19,15 @@ query_stocksmart_api <- function() {
   allids$ecoId <- "%"
   jsonquery <- jsonlite::toJSON(allids, pretty = TRUE,auto_unbox = TRUE)
 
+  url <- "https://apps-st.fisheries.noaa.gov/stocksmart/"
   # url query
-  file <- httr::GET("https://www.st.nmfs.noaa.gov/stocksmart/sis_servlet",
+  # file <- httr::GET("https://www.st.nmfs.noaa.gov/stocksmart/sis_servlet",
+  #                   query=list(jsonParam = jsonquery))
+  file <- httr::GET(paste0(url,"sis_servlet"),
                     query=list(jsonParam = jsonquery))
-
   # pulls html content into a char
   allEntitiesChar <- base::rawToChar(file$content)
+  #   allEntitiesChar <- httr::content(file,as="text")
   # converts to a readable R object
   allEntities <- jsonlite::fromJSON(allEntitiesChar)$data
 
@@ -40,7 +43,7 @@ query_stocksmart_api <- function() {
 
   jsonquery <- jsonlite::toJSON(assess, pretty = TRUE,auto_unbox = TRUE)
 
-  file <- httr::GET("https://www.st.nmfs.noaa.gov/stocksmart/sis_servlet",
+  file <- httr::GET(paste0(url,"sis_servlet"),
                     query=list(jsonParam = jsonquery))
 
   # pulls html content into a char
@@ -85,7 +88,7 @@ query_stocksmart_api <- function() {
 
     jsonquery <- jsonlite::toJSON(excel, pretty = TRUE,auto_unbox = TRUE)
 
-    file <- httr::GET("https://www.st.nmfs.noaa.gov/stocksmart/data-export-servlet",
+    file <- httr::GET(paste0(url,"data-export-servlet"),
                       query=list(jsonParam = jsonquery))
 
     # create dir if doesnt exist
@@ -135,7 +138,7 @@ query_stocksmart_api <- function() {
   jsonquery <- jsonlite::toJSON(ssummary, pretty = TRUE,auto_unbox = TRUE)
 
   # make url request
-  file <- httr::GET("https://www.st.nmfs.noaa.gov/stocksmart/data-export-servlet",
+  file <- httr::GET(paste0(url,"data-export-servlet"),
                     query=list(fileTypeList="", jsonParam = jsonquery))
 
   # save as excel file
