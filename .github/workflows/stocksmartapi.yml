@@ -1,8 +1,8 @@
 name: pull and process data from stocksmart website
 
 on:
-#  schedule:
-#    - cron: "1 0 1 * *"
+ schedule:
+   - cron: "0 0 12 * * ?"
 
   push:
     branches:
