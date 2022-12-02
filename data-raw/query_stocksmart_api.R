@@ -97,7 +97,7 @@ query_stocksmart_api <- function() {
     }
     # save excel file
     httr::GET(file$url,httr::write_disk(path=here::here(paste0("data-raw/allAssessments/Assessment_TimeSeries_Data_Part_",filenumber,".xlsx")),overwrite=T))
-
+  break
   }
 
   ## 4. Get summary data using assessment id's (asmtids)
