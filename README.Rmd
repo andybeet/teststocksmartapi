@@ -16,6 +16,6 @@ knitr::opts_chunk$set(
 
 # teststocksmartapi
 
-*Date of most recent data pull: `r strsplit(as.character(file.mtime(here::here("data-raw","datapull.txt")))," ")[[1]][1]`* 
+*Date of most recent data pull: `r strsplit(as.character(file.mtime(here::here("data-raw","datapull.txt")))," ")[[1]]`* 
 
 
