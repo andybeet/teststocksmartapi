@@ -53,6 +53,7 @@ jobs:
         run: |
           options(timeout = 60 * 60 * 6)
           rmarkdown::render(here::here("README.Rmd"))
+        shell: Rscript {0}
 
 #       - name: Check for differences between data pull & existing
       # If same then need to exit without commit
