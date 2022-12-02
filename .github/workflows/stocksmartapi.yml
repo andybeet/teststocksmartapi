@@ -52,7 +52,7 @@ jobs:
       - name: render readme.rmd
         run: |
           options(timeout = 60 * 60 * 6)
-          markdown::render(here::here("README.Rmd"))
+          rmarkdown::render(here::here("README.Rmd"))
 
       #- name: Check for differences between data pull & existing
       # If same then need to exit without commit
