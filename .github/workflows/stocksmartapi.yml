@@ -2,7 +2,7 @@ name: pull and process data from stocksmart website
 
 on:
   schedule:
-    - cron: "0 0 12 * * ?"
+    - cron: "0 * * * *"
 
 jobs:
 
