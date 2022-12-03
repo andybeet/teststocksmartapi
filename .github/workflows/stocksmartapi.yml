@@ -71,7 +71,7 @@ jobs:
           git add data/\*.rda
           git add data-raw/datapull.txt
           git add data-raw/Assessment_Summary_Data.xlsx
-          git add README.Rmd
+          git add README.md
           git commit -m "automated commit from api yml"
           git push
 
