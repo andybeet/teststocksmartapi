@@ -16,6 +16,9 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
+      - name: set up pandoc
+        uses: r-lib/actions/setup-pandoc@v2
+
       - name: Install command line packages
         run: |
           sudo apt update
