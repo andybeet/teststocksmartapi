@@ -68,7 +68,8 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add data/\*.rda
+          git add data/stockAssessmentData.rda
+          git add data/stockAssessmentSummary.rda
           git add data-raw/datapull.txt
           git add data-raw/Assessment_Summary_Data.xlsx
           git add README.md
