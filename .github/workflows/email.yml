@@ -5,7 +5,9 @@ on:
     branches:
       - main
 
-steps:
+jobs:
+  runs-on: ubuntu-latest
+  steps:
   - name: Send email
     uses: dawidd6/action-send-mail@v3
     with:
