@@ -6,12 +6,10 @@ on:
       - main
 
 jobs:
-  sendig-email:
+  sending-email:
     runs-on: ubuntu-latest
-    steps:
 
-      - name: Check out repository code
-        uses: actions/checkout@v3
+    steps:
 
       - name: Send email
         uses: dawidd6/action-send-mail@v3
