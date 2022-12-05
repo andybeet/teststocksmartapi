@@ -26,4 +26,4 @@ jobs:
 
           from: Luke Skywalker # OR 'Luke Skywalker <user@example.com>'
 
-          body: Build job of ${{ github.repository }} completed successfully!
+          body: ${{ github.repository }} updated data!
