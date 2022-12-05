@@ -4,23 +4,22 @@ on:
   push:
     branches:
       - main
-      - master
 
 
 jobs:
-    steps:
-      - name: Send email
-        uses: dawdidd6/action-send-mail@v3
-        with:
-          server_address: smtp.gmail.com
-          server_port: 465
+  steps:
+  - name: Send email
+    uses: dawdidd6/action-send-mail@v3
+    with:
+      server_address: smtp.gmail.com
+      server_port: 465
 
-          username: ${{ secrets.MAIL_USERNAME }}
-          password: ${{ secrets.MAIL_PASSWORD }}
+      username: ${{ secrets.MAIL_USERNAME }}
+      password: ${{ secrets.MAIL_PASSWORD }}
 
-          subject: Github Actions job result
-          to: andrew.beet@noaa.gov
+      subject: Github Actions job result
+      to: andrew.beet@noaa.gov
 
-          from: Luke Skywalker # OR 'Luke Skywalker <user@example.com>'
+      from: Luke Skywalker # OR 'Luke Skywalker <user@example.com>'
 
-          body: Build job of ${{ github.repository }} completed successfully!
+      body: Build job of ${{ github.repository }} completed successfully!
