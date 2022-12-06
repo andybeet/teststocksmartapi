@@ -33,7 +33,7 @@ jobs:
 
       - name: Install packages
         run: |
-          install.packages(c("dplyr", "httr", "here","readxl", "usethis","rmarkdown"))
+          install.packages(c("dplyr", "httr", "here","readxl", "usethis","kableExtra","rmarkdown"))
         shell: Rscript {0}
 
       - name: Save current rdas
