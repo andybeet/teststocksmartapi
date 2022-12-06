@@ -58,10 +58,10 @@ jobs:
 #         and write to repo later
         shell: Rscript {0}
 
-      - name: Compare curent pull with existing
+      - name: Compare current pull with existing
         run: |
           options(timeout = 60 * 60 * 6)
-          source(here::here("data-raw/compareData.R"))
+          source(here::here("data-raw/compareData.r"))
           compareData()
         shell: Rscript {0}
 

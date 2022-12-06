@@ -25,6 +25,7 @@ compareData <- function() {
       sumcolsRemoved <- setdiff(names(current),names(new))
       sumspeciesAdded <- setdiff(unique(new$`Stock Name`),unique(current$`Stock Name`))
       sumspeciesRemoved <- setdiff(unique(current$`Stock Name`),unique(new$`Stock Name`))
+      file.create(here::here("change.txt"))
 
   } else {
     sumcolsAdded <- NULL
@@ -60,6 +61,7 @@ compareData <- function() {
 
     datspeciesAdded <- dplyr::setdiff(newsp,currentsp)
     datspeciesRemoved <- dplyr::setdiff(currentsp,newsp)
+    file.create(here::here("change.txt"))
 
   } else {
     datcolsAdded <- NULL
@@ -78,5 +80,7 @@ compareData <- function() {
                       datrowRem = datspeciesRemoved,
                       datcolAdd = datcolsAdded,
                       datcolRem = datcolsRemoved))
+
+
 
 }
