@@ -74,7 +74,9 @@ query_stocksmart_api <- function() {
   n <- 100
   # loop over the assessment ids in chunks of 100.
   # Server will crash if n is too much bigger
-  for (ifile in 1:ceiling(length(asmtids)/n)) {
+  ee <- ceiling(length(asmtids)/n)
+
+  for (ifile in 1:2) {
     # format excel output name
     filenumber <- sprintf("%02d",ifile)
 
@@ -97,7 +99,7 @@ query_stocksmart_api <- function() {
     }
     # save excel file
     httr::GET(file$url,httr::write_disk(path=here::here(paste0("data-raw/allAssessments/Assessment_TimeSeries_Data_Part_",filenumber,".xlsx")),overwrite=T))
-  break
+
   }
 
   ## 4. Get summary data using assessment id's (asmtids)
