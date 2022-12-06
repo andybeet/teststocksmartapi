@@ -2,7 +2,8 @@ name: pull and process data from stocksmart website
 
 on:
   schedule:
-    - cron: "0 13 * * 1"
+    - cron: "0 * * * *" # GMT Every hour on hour
+#    - cron: "0 13 * * 1" # GMT. Every monday at 1300 hrs
 
 jobs:
 
@@ -36,6 +37,12 @@ jobs:
           install.packages(c("dplyr", "httr", "here","readxl", "usethis","rmarkdown"))
         shell: Rscript {0}
 
+      - name: Save current rdas
+        run: |
+           saveRDS(testapi::stockAssessmentSummary,here::here("data-raw/tempSummary.rds"))
+           saveRDS(testapi::stockAssessmentData,here::here("data-raw/tempData.rds"))
+        shell: Rscript{0}
+
       - name: Pull stocksmart data
         run: |
           options(timeout = 60 * 60 * 6)
@@ -51,6 +58,15 @@ jobs:
 #         incorporate difference check (below) prior to writing to repo or save as RDS and
 #         and write to repo later
         shell: Rscript {0}
+
+      - name: Compare curent pull with existing
+        run: |
+          options(timeout = 60 * 60 * 6)
+          source(here::here("data-raw/compareData.R"))
+          compareData()
+        shell: Rscript {0}
+
+
 
       - name: render readme.rmd
         run: |
@@ -75,6 +91,29 @@ jobs:
           git add README.md
           git commit -m "automated commit from api yml"
           git push
+
+
+      - name: Send email
+        uses: dawidd6/action-send-mail@v3
+
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+
+          subject: Github Actions job result
+          to: andrew.beet@noaa.gov
+
+          from: Luke Skywalker # OR 'Luke Skywalker <user@example.com>'
+
+          body: ${{ github.repository }} updated data!
+
+          html_body: file://${{github.workspace}}/data-raw/sendAsEmail.html
+
+
+
 
 #       - name: Autoincrement a new patch version
       #   run: |
