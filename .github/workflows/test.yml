@@ -33,13 +33,36 @@ jobs:
 
       - name: Install packages
         run: |
-          install.packages("here")
+          install.packages(c("dplyr", "httr", "here","readxl", "usethis","rmarkdown"))
         shell: Rscript {0}
 
       - name: Save current rdas
         run: |
            saveRDS(here::here("data/stockAssessmentSummary.rda"),here::here("data-raw/tempSummary.rds"))
            saveRDS(here::here("data/stockAssessmentData.rda"),here::here("data-raw/tempData.rds"))
+        shell: Rscript {0}
+
+      - name: Pull stocksmart data
+        run: |
+          options(timeout = 60 * 60 * 6)
+          source(here::here("data-raw/query_stocksmart_api.R"))
+          query_stocksmart_api()
+        shell: Rscript {0}
+
+      - name: Process stocksmart data
+        run: |
+          options(timeout = 60 * 60 * 6)
+          source(here::here("data-raw/process_stocksmart_ts_data.R"))
+          process_stocksmart_ts_data(exportFile=TRUE)
+#         incorporate difference check (below) prior to writing to repo or save as RDS and
+#         and write to repo later
+        shell: Rscript {0}
+
+      - name: Compare curent pull with existing
+        run: |
+          options(timeout = 60 * 60 * 6)
+          source(here::here("data-raw/compareData.R"))
+          compareData()
         shell: Rscript {0}
 
 
