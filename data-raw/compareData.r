@@ -70,7 +70,7 @@ compareData <- function() {
     datspeciesRemoved <- NULL
   }
 
-  rmarkdown::render(here::here("data-raw/sendAsEmail.rmd"),
+  rmarkdown::render(here::here("data-raw/sendAsEmail.Rmd"),
                     params = list(
                       sumrowAdd = sumspeciesAdded,
                       sumrowRem = sumspeciesRemoved,
