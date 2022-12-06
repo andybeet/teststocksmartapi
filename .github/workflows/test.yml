@@ -33,14 +33,14 @@ jobs:
 
       - name: Install packages
         run: |
-          install.packages(c("dplyr", "httr", "here","readxl", "usethis","rmarkdown"))
+          install.packages("here")
         shell: Rscript {0}
 
       - name: Save current rdas
         run: |
            saveRDS(here::here("data/stockAssessmentSummary.rda),here::here("data-raw/tempSummary.rds"))
            saveRDS(here::here("data/stockAssessmentData.rda"),here::here("data-raw/tempData.rds"))
-        shell: Rscript{0}
+        shell: Rscript {0}
 
 
 #       - name: Check for differences between data pull & existing
