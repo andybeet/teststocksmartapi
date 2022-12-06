@@ -1,4 +1,4 @@
-name: pull and process data from stocksmart website
+name: test
 
 on:
   push:
@@ -38,7 +38,7 @@ jobs:
 
       - name: Save current rdas
         run: |
-           saveRDS(here::here("data/stockAssessmentSummary.rda),here::here("data-raw/tempSummary.rds"))
+           saveRDS(here::here("data/stockAssessmentSummary.rda"),here::here("data-raw/tempSummary.rds"))
            saveRDS(here::here("data/stockAssessmentData.rda"),here::here("data-raw/tempData.rds"))
         shell: Rscript {0}
 
