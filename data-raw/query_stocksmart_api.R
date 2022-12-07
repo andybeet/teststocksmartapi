@@ -76,7 +76,7 @@ query_stocksmart_api <- function() {
   # Server will crash if n is too much bigger
   ee <- ceiling(length(asmtids)/n)
 
-  for (ifile in 1:3) {
+  for (ifile in ee) {
     # format excel output name
     filenumber <- sprintf("%02d",ifile)
 

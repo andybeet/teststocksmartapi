@@ -34,14 +34,18 @@ jobs:
 
       - name: Install packages
         run: |
-          install.packages(c("dplyr", "httr", "here","readxl", "usethis","rmarkdown"))
+          install.packages(c("dplyr", "httr", "here","readxl", "usethis","kableExtra","rmarkdown"))
         shell: Rscript {0}
 
       - name: Save current rdas
         run: |
-           saveRDS(here::here("data/stockAssessmentSummary.rda"),here::here("data-raw/tempSummary.rds"))
-           saveRDS(here::here("data/stockAssessmentData.rda"),here::here("data-raw/tempData.rds"))
-        shell: Rscript{0}
+          load(here::here("data/stockAssessmentSummary.rda"))
+          load(here::here("data/stockAssessmentData.rda"))
+          saveRDS(stockAssessmentSummary,here::here("data-raw/tempSummary.rds"))
+          saveRDS(stockAssessmentData,here::here("data-raw/tempData.rds"))
+          rm(stockAssessmentData)
+          rm(stockAssessmentSummary)
+        shell: Rscript {0}
 
       - name: Pull stocksmart data
         run: |
@@ -54,19 +58,19 @@ jobs:
         run: |
           options(timeout = 60 * 60 * 6)
           source(here::here("data-raw/process_stocksmart_ts_data.R"))
-          process_stocksmart_ts_data(exportFile=TRUE)
+          out <- process_stocksmart_ts_data(exportFile=TRUE)
+          saveRDS(out$summaryData,here::here("data-raw/newSummary.rds"))
+          saveRDS(out$tsData,here::here("data-raw/newData.rds"))
 #         incorporate difference check (below) prior to writing to repo or save as RDS and
 #         and write to repo later
         shell: Rscript {0}
 
-      - name: Compare curent pull with existing
+      - name: Compare current pull with existing
         run: |
           options(timeout = 60 * 60 * 6)
-          source(here::here("data-raw/compareData.R"))
+          source(here::here("data-raw/compareData.r"))
           compareData()
         shell: Rscript {0}
-
-
 
       - name: render readme.rmd
         run: |
@@ -74,12 +78,13 @@ jobs:
           rmarkdown::render(here::here("README.Rmd"))
         shell: Rscript {0}
 
-#       - name: Check for differences between data pull & existing
-      # If same then need to exit without commit
+      #- name: Find differences
+      # Create text explaining differences and append to news.md and release notes
 
       #- name: Find differences
       # Create text explaining differences and append to news.md and release notes
 
+      # Send email indicating if anything has changed
       - name: Send email
         uses: dawidd6/action-send-mail@v3
 
@@ -93,11 +98,13 @@ jobs:
           subject: Github Actions job result
           to: andrew.beet@noaa.gov
 
-          from: Luke Skywalker # OR 'Luke Skywalker <user@example.com>'
+          from: Stocksmart GitHub # OR 'Luke Skywalker <user@example.com>'
 
-          body: ${{ github.repository }} updated data!
+          #body: ${{ github.repository }} test!
 
-          html_body: file://${{github.workspace}}/data-raw/sendAsEmail.html
+          html_body: file://${{github.workspace}}/data-raw/datapull.txt
+
+          attachments: ./data-raw/sendAsEmail.html
 
       - name: commit data files
         run: |
