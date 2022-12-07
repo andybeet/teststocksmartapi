@@ -76,7 +76,7 @@ process_stocksmart_ts_data <- function(exportFile=F) {
     usethis::use_data(stockAssessmentData, overwrite = T)
   }
 
-  return(stockAssessmentData)
+  return(list(tsData=stockAssessmentData,summaryData = summaryData))
 
 }
 

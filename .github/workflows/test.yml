@@ -53,7 +53,9 @@ jobs:
         run: |
           options(timeout = 60 * 60 * 6)
           source(here::here("data-raw/process_stocksmart_ts_data.R"))
-          process_stocksmart_ts_data(exportFile=TRUE)
+          out <- process_stocksmart_ts_data(exportFile=TRUE)
+          saveRDS(out$summaryData,here::here("data-raw/newSummary.rds"))
+          saveRDS(out$tsData,here::here("data-raw/newData.rds"))
 #         incorporate difference check (below) prior to writing to repo or save as RDS and
 #         and write to repo later
         shell: Rscript {0}
@@ -66,8 +68,6 @@ jobs:
         shell: Rscript {0}
 
 
-#       - name: Check for differences between data pull & existing
-      # If same then need to exit without commit
 
       #- name: Find differences
       # Create text explaining differences and append to news.md and release notes
@@ -85,7 +85,7 @@ jobs:
           subject: Github Actions job result
           to: andrew.beet@noaa.gov
 
-          from: Luke Skywalker # OR 'Luke Skywalker <user@example.com>'
+          from: Stocksmart GitHub # OR 'Luke Skywalker <user@example.com>'
 
           body: ${{ github.repository }} test!
 

@@ -5,8 +5,7 @@ library(magrittr)
 compareData <- function() {
 
   current <- readRDS(here::here("data-raw/tempSummary.rds"))
-  load(here::here("data/stockAssessmentSummary.rda"))
-  new <- stockAssessmentSummary
+  new <- readRDS(here::here("data-raw/newSummary.rds"))
 
   #current <- testapi::stockAssessmentSummary
   #new <- stocksmart::stockAssessmentSummary
@@ -42,8 +41,7 @@ compareData <- function() {
   #######################################################
 
   current <- readRDS(here::here("data-raw/tempData.rds"))
-  new <- load(here::here("data/stockAssessmentData.rda"))
-  new <- stockAssessmentData
+  new <- readRDS(here::here("data-raw/newData.rds"))
 
   #current <- current[1:(nrow(current)-55000),]
 
