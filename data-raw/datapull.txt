@@ -1,2 +1,2 @@
-Number of files read = 1
-number of rows of data object = 12792
+Number of files read = 24
+number of rows of data object = 248144
