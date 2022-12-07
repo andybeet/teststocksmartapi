@@ -38,8 +38,12 @@ jobs:
 
       - name: Save current rdas
         run: |
-           saveRDS(here::here("data/stockAssessmentSummary.rda"),here::here("data-raw/tempSummary.rds"))
-           saveRDS(here::here("data/stockAssessmentData.rda"),here::here("data-raw/tempData.rds"))
+          load(here::here("data/stockAssessmentSummary.rda"))
+          load(here::here("data/stockAssessmentData.rda"))
+          saveRDS(stockAssessmentSummary,here::here("data-raw/tempSummary.rds"))
+          saveRDS(stockAssessmentData,here::here("data-raw/tempData.rds"))
+          rm(stockAssessmentData)
+          rm(stockAssessmentSummary)
         shell: Rscript {0}
 
       - name: Pull stocksmart data
