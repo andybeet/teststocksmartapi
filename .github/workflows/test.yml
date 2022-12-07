@@ -89,7 +89,7 @@ jobs:
 
           body: ${{ github.repository }} test!
 
-          html_body: file://${{github.workspace}}/change.txt
+          html_body: file://${{github.workspace}}/data.raw/datapull.txt
 #          html_body: file://${{github.workspace}}/data-raw/sendAsEmail.html
 
 
