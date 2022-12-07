@@ -69,7 +69,8 @@ process_stocksmart_ts_data <- function(exportFile=F) {
 
 
   file.create(here::here("data-raw","datapull.txt"))
-  cat(paste0("Number of files read = ",nrow(files)),file=here::here("data-raw","datapull.txt"))
+  cat(paste0("Number of files read = ",nrow(files),"/n"),file=here::here("data-raw","datapull.txt"))
+  cat(paste0("number of rows of data object = ",nrow(stockAssessmentData),"/n"),file=here::here("data-raw","datapull.txt"))
 
   stockAssessmentData <-  tibble::as_tibble(stockAssessmentData)
 
