@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+
 jobs:
 
   build:
@@ -71,6 +72,11 @@ jobs:
           compareData()
         shell: Rscript {0}
 
+      - name: render readme.rmd
+        run: |
+          options(timeout = 60 * 60 * 6)
+          rmarkdown::render(here::here("README.Rmd"))
+        shell: Rscript {0}
 
 
       #- name: Find differences
@@ -91,9 +97,10 @@ jobs:
 
           from: Stocksmart GitHub # OR 'Luke Skywalker <user@example.com>'
 
-          body: ${{ github.repository }} test!
+          #body: ${{ github.repository }} test!
 
           html_body: file://${{github.workspace}}/data-raw/datapull.txt
+
           attachments: ./data-raw/sendAsEmail.html
 
       # commit new files to the repo
