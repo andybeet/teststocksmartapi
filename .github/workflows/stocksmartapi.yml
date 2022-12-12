@@ -3,7 +3,7 @@ name: pull and process data from stocksmart website
 on:
   schedule:
     #- cron: "0 * * * *" # GMT Every hour on hour
-    - cron: "0 13 * * 7" # GMT. Every Sunday at 1300 hrs
+    - cron: "0 13 * * MON" # GMT. Every Sunday at 1300 hrs
 
 jobs:
 
