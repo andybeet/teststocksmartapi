@@ -2,9 +2,10 @@ name: pull and process data from stocksmart website
 
 on:
   schedule:
-    #- cron: "0 * * * *" # GMT Every hour on hour
-    #- cron: "0 13 * * 0" # GMT. Every Sunday at 1300 hrs
-    - cron: "0 9 * * 2" # GMT. Every Tuesday at 0900 hrs
+    # uses UTC/GMT time (+ 5 hrs)
+    #- cron: "0 * * * *" # Every hour on hour
+    #- cron: "0 18 * * 0" # Every Sunday at 1300 hrs = 1800 GMT
+    - cron: "0 15 * * 2" # Every Tuesday at 1000 hrs = 1500 UTC
 
 jobs:
 
