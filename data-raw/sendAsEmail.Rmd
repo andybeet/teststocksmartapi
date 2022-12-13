@@ -21,7 +21,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### Species Added
 ```{r, echo = F}
-kableExtra::kable(params$sumrowAdd,col.names =NULL)
+kableExtra::kable(params$sumrowAdd)
 ```
 
 ### Species Removed
