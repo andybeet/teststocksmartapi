@@ -63,7 +63,7 @@ jobs:
         run: |
           options(timeout = 60 * 60 * 6)
           source(here::here("data-raw/process_stocksmart_ts_data.R"))
-          out <- process_stocksmart_ts_data(exportFile=TRUE)
+          out <- process_stocksmart_ts_data(exportFile=TRUE,isRunLocal=F)
           saveRDS(out$summaryData,here::here("data-raw/newSummary.rds"))
           saveRDS(out$tsData,here::here("data-raw/newData.rds"))
 #         incorporate difference check (below) prior to writing to repo or save as RDS and
@@ -118,7 +118,6 @@ jobs:
           git add data/stockAssessmentData.rda
           git add data/stockAssessmentSummary.rda
           git add data-raw/datapull.txt
-          git add data-raw/Assessment_Summary_Data.xlsx
           git add README.md
           git commit -m "automated commit from api yml"
           git push
