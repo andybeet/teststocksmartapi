@@ -103,7 +103,7 @@ jobs:
           subject: Github Actions job result
           to: andrew.beet@noaa.gov
 
-          from: Stocksmart GitHub # OR 'Luke Skywalker <user@example.com>'
+          from: testapi Stocksmart GitHub # OR 'Luke Skywalker <user@example.com>'
 
           #body: ${{ github.repository }} test!
 
