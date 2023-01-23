@@ -44,7 +44,7 @@ kableExtra::kable(params$sumcolRem,col.names =NULL)
 
 ### Species Added
 ```{r, echo = F}
-kableExtra::kable(params$datrowAdd)
+kableExtra::kable(params$datrowAdd,col.names = NULL)
 ```
 
 ### Species Removed
