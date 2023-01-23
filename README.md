@@ -3,5 +3,4 @@
 
 # teststocksmartapi
 
-*Date of most recent data pull: Number of files read = 25*
-
+*Date of most recent data pull: 19380Number of files read = 25*
