@@ -3,4 +3,4 @@
 
 # teststocksmartapi
 
-*Date of most recent data pull: 2023-01-25*
+*Date of most recent data pull: 2023-01-26*
