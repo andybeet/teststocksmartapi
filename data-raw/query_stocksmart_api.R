@@ -71,7 +71,7 @@ query_stocksmart_api <- function() {
   excel$minYear <- "1872"
   excel$maxYear <- "2032"
 
-  n <- 100
+  n <- 60
   # loop over the assessment ids in chunks of 100.
   # Server will crash if n is too much bigger
 
@@ -98,6 +98,7 @@ query_stocksmart_api <- function() {
     }
     # save excel file
     httr::GET(file$url,httr::write_disk(path=here::here(paste0("data-raw/allAssessments/Assessment_TimeSeries_Data_Part_",filenumber,".xlsx")),overwrite=T))
+    #httr::GET(file$url,httr::write_disk(path=here::here(paste0("data-raw/test.xlsx")),overwrite=T))
 
   }
 
