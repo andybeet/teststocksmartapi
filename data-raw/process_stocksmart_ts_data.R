@@ -124,7 +124,7 @@ process_stocksmart_ts_data <- function(exportFile=F,isRunLocal=T) {
   cat(paste0("number of rows of data object = ",nrow(stockAssessmentData),"\n"),file=here::here("data-raw",fn),append = T)
   cat(paste0("number of rows stocksmart data object = ",nrow(stocksmart::stockAssessmentData),"\n"),file=here::here("data-raw",fn),append = T)
 
-  cat(paste0("number of rows of summary object = ",nrow(summaryData),"\r"),file=here::here("data-raw",fn),append = T)
+  cat(paste0("number of rows of summary object = ",nrow(summaryData),"\n"),file=here::here("data-raw",fn),append = T)
   cat(paste0("number of rows stocksmart summary data object = ",nrow(stocksmart::stockAssessmentSummary),"\r"),file=here::here("data-raw",fn),append = T)
 
 
