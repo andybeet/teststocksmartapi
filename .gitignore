@@ -11,7 +11,7 @@ data-raw/old
 data-raw/temp
 
 # files created from workflow
-data-raw/README.html
+README.html
 data-raw/newData.rds
 data-raw/newSummary.rds
 data-raw/sendAsEmail.html
