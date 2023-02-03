@@ -106,7 +106,13 @@ process_stocksmart_ts_data <- function(exportFile=F,isRunLocal=T) {
                   UpdateType=`Update Type`,
                   AssessmentType =`Assessment Type`,
                   StockArea=`Stock Area`,
-                  RegionalEcosystem=`Regional Ecosystem`)
+                  RegionalEcosystem=`Regional Ecosystem`) %>%
+    dplyr::mutate(Type = dplyr::case_when(is.na(UpdateType) ~ AssessmentType,
+                                          TRUE ~ UpdateType)) %>%
+    dplyr::select(-AssessmentType,-UpdateType) %>%
+    dplyr::rename(AssessmentType=Type)
+
+
 
 
   # create a differnt file if run locally
