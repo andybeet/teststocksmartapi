@@ -9,3 +9,11 @@
 data-raw/allAssessments
 data-raw/old
 data-raw/temp
+
+# files created from workflow
+data-raw/README.html
+data-raw/newData.rds
+data-raw/newSummary.rds
+data-raw/sendAsEmail.html
+data-raw/tempData.rds
+data-raw/tempSummary.rds
