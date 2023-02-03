@@ -84,6 +84,7 @@ process_stocksmart_ts_data <- function(exportFile=F,isRunLocal=T) {
   #   dplyr::rename(UpdateType=`Update Type`,StockArea=`Stock Area`,RegionalEcosystem=`Regional Ecosystem`)
   stockAssessmentData <- dplyr::left_join(stockAssessmentData,summaryData,by=c("Assessmentid" = "Assessment ID")) %>%
     dplyr::select(StockName,
+                  Stockid,
                   Assessmentid,
                   Year,
                   Value,
@@ -96,21 +97,15 @@ process_stocksmart_ts_data <- function(exportFile=F,isRunLocal=T) {
                   `Common Name`,
                   `Scientific Name`,
                   `ITIS Taxon Serial Number`,
-                  `Update Type`,
                   `Assessment Type`,
                   `Stock Area`,
                   `Regional Ecosystem`) %>%
     dplyr::rename(CommonName=`Common Name`,
                   ScientificName=`Scientific Name`,
                   ITIS=`ITIS Taxon Serial Number`,
-                  UpdateType=`Update Type`,
                   AssessmentType =`Assessment Type`,
                   StockArea=`Stock Area`,
-                  RegionalEcosystem=`Regional Ecosystem`) %>%
-    dplyr::mutate(Type = dplyr::case_when(is.na(UpdateType) ~ AssessmentType,
-                                          TRUE ~ UpdateType)) %>%
-    dplyr::select(-AssessmentType,-UpdateType) %>%
-    dplyr::rename(AssessmentType=Type)
+                  RegionalEcosystem=`Regional Ecosystem`)
 
 
 
