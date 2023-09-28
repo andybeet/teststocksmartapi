@@ -7,7 +7,7 @@ on:
     #- cron: "0 */4 * * *" # Every 4th hour on
     #- cron: "0 * * * *" # Every hour on hour
     #- cron: "20 * * * *" # Every hour 20th minute
-    - cron: "*/10 * * * *" # Every 10 minutes
+    - cron: "*/20 * * * *" # Every 20 minutes
     #- cron: "0 18 * * 0" # Every Sunday at 1300 hrs = 1800 GMT
     #- cron: "0 15 * * 2" # Every Tuesday at 1000 hrs = 1500 UTC
 
@@ -79,11 +79,9 @@ jobs:
           source(here::here("data-raw/compareData.r"))
           source(here::here("data-raw/update_description.R"))
           source(here::here("data-raw/update_news.R"))
-          params <- compareData()
-          version <- update_description(params)
-          res <- update_news(version,params)
-
-
+          diffs <- compareData()
+          version <- update_description(diffs)
+          res <- update_news(version,diffs)
         shell: Rscript {0}
 
       - name: render readme.rmd
