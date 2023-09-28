@@ -8,9 +8,9 @@ compareData <- function() {
   new <- readRDS(here::here("data-raw/newSummary.rds"))
 
   c1 <- current %>%
-    dplyr::select(`Stock Name`,`ITIS Taxon Serial Number`,`Stock Name`,`Assessment Year`)
+    dplyr::select(`Stock Name`,`ITIS Taxon Serial Number`,`Assessment Year`)
   n1 <- new %>%
-    dplyr::select(`Stock Name`,`ITIS Taxon Serial Number`,`Stock Name`,`Assessment Year`)
+    dplyr::select(`Stock Name`,`ITIS Taxon Serial Number`,`Assessment Year`)
 
   #######################################################
   #######################################################
@@ -56,8 +56,10 @@ compareData <- function() {
       dplyr::select(StockName,ITIS,StockArea,AssessmentYear) %>%
       dplyr::distinct()
 
-    datspeciesAdded <- dplyr::setdiff(newsp,currentsp)
-    datspeciesRemoved <- dplyr::setdiff(currentsp,newsp)
+    datspeciesAdded <- dplyr::setdiff(newsp,currentsp) %>%
+      dplyr::select(-StockArea)
+    datspeciesRemoved <- dplyr::setdiff(currentsp,newsp) %>%
+      dplyr::select(-StockArea)
 
 
   } else {
@@ -67,17 +69,19 @@ compareData <- function() {
     datspeciesRemoved <- NULL
   }
 
+  params = list(
+    sumrowAdd = sumspeciesAdded,
+    sumrowRem = sumspeciesRemoved,
+    sumcolAdd = sumcolsAdded,
+    sumcolRem = sumcolsRemoved,
+    datrowAdd = datspeciesAdded,
+    datrowRem = datspeciesRemoved,
+    datcolAdd = datcolsAdded,
+    datcolRem = datcolsRemoved)
+
   rmarkdown::render(here::here("data-raw/sendAsEmail.Rmd"),
-                    params = list(
-                      sumrowAdd = sumspeciesAdded,
-                      sumrowRem = sumspeciesRemoved,
-                      sumcolAdd = sumcolsAdded,
-                      sumcolRem = sumcolsRemoved,
-                      datrowAdd = datspeciesAdded,
-                      datrowRem = datspeciesRemoved,
-                      datcolAdd = datcolsAdded,
-                      datcolRem = datcolsRemoved))
+                    params = params)
 
-
+  return(params)
 
 }

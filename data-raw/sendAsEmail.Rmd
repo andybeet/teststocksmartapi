@@ -54,7 +54,6 @@ kableExtra::kable(params$sumcolRem,col.names =NULL)
 ```{r, echo = F}
 if(!is.null(params$datrowAdd)){
   params$datrowAdd %>% 
-    dplyr::select(-StockArea) %>%
     dplyr::mutate(ITIS = paste0("(",ITIS,"):")) %>%
     kableExtra::kable()
 }
@@ -64,7 +63,6 @@ if(!is.null(params$datrowAdd)){
 ```{r, echo = F}
 if(!is.null(params$datrowRem)) {
   params$datrowRem %>% 
-    dplyr::select(-StockArea) %>%
     dplyr::mutate(ITIS = paste0("(",ITIS,"):")) %>%
     kableExtra::kable(col.names =NULL)
 }
