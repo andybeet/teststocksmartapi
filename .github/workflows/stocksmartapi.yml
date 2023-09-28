@@ -80,7 +80,7 @@ jobs:
           source(here::here("data-raw/update_description.R"))
           source(here::here("data-raw/update_news.R"))
           diffs <- compareData()
-          version <- update_description(diffs)
+          version <- update_description(diffs,digit=3)
           update_news(version,diffs)
           rmarkdown::render(here::here("data-raw/sendAsEmail.Rmd"),
                     params = diffs)
