@@ -1,3 +1,7 @@
+# stocksmart 0.0.2
+
+Data pull: September 28, 2023
+
 # testapi 0.0.1
 
 
