@@ -82,6 +82,8 @@ jobs:
           diffs <- compareData()
           version <- update_description(diffs)
           update_news(version,diffs)
+          rmarkdown::render(here::here("data-raw/sendAsEmail.Rmd"),
+                    params = diffs)
         shell: Rscript {0}
 
       - name: render readme.rmd

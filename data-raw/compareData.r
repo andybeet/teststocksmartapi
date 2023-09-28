@@ -79,10 +79,6 @@ compareData <- function() {
     datcolAdd = datcolsAdded,
     datcolRem = datcolsRemoved)
 
-  rmarkdown::render(here::here("data-raw/sendAsEmail.Rmd"),
-                    params = params)
-
-  compare <- params
-  return(compare)
+  return(params)
 
 }
