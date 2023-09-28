@@ -132,6 +132,10 @@ jobs:
           git commit -m "automated commit from api yml"
           git push
 
+      - name: create gh-release
+        run: |
+          usethis::use_github_release()
+        shell: Rscript{0}
 
 
 #       - name: Autoincrement a new patch version
