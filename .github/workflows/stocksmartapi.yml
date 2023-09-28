@@ -72,10 +72,17 @@ jobs:
         shell: Rscript {0}
 
       - name: Compare current pull with existing
+      # creates an rmd to send as email and also adds content to news.md
         run: |
           options(timeout = 60 * 60 * 6)
           source(here::here("data-raw/compareData.r"))
-          compareData()
+          source(here::here("data-raw/update_description.r"))
+          source(here::here("data-raw/update_news.r"))
+          params <- compareData()
+          version <- update_description(params)
+          res <- update_news(version,params)
+
+
         shell: Rscript {0}
 
       - name: render readme.rmd
@@ -120,6 +127,8 @@ jobs:
           git add data/stockAssessmentSummary.rda
           git add data-raw/datapull.txt
           git add README.md
+          git add NEWS.md
+          git add DESCRIPTION
           git commit -m "automated commit from api yml"
           git push
 
