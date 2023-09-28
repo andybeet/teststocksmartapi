@@ -1,3 +1,7 @@
+# stocksmart 0.0.3
+
+Data pull: September 28, 2023
+
 # stocksmart 0.0.2
 
 Data pull: September 28, 2023
