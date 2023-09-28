@@ -81,7 +81,7 @@ jobs:
           source(here::here("data-raw/update_news.R"))
           diffs <- compareData()
           version <- update_description(diffs)
-          res <- update_news(version,diffs)
+          update_news(version,diffs)
         shell: Rscript {0}
 
       - name: render readme.rmd
