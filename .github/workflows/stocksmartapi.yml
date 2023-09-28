@@ -76,8 +76,8 @@ jobs:
         run: |
           options(timeout = 60 * 60 * 6)
           source(here::here("data-raw/compareData.r"))
-          source(here::here("data-raw/update_description.r"))
-          source(here::here("data-raw/update_news.r"))
+          source(here::here("data-raw/update_description.R"))
+          source(here::here("data-raw/update_news.R"))
           params <- compareData()
           version <- update_description(params)
           res <- update_news(version,params)
