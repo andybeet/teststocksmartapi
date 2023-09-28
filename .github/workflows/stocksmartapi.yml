@@ -3,10 +3,10 @@ name: pull and process data from stocksmart website
 on:
   schedule:
     # uses UTC/GMT time (+ 5 hrs)
-    - cron: "0 6 * * 1-5" # Every day at 1am EST = 0600 GMT
+   # - cron: "0 6 * * 1-5" # Every day at 1am EST = 0600 GMT
     #- cron: "0 */4 * * *" # Every 4th hour on
     #- cron: "0 * * * *" # Every hour on hour
-    #- cron: "20 * * * *" # Every hour 20th minute
+    - cron: "25 * * * *" # Every hour 20th minute
     #- cron: "0 18 * * 0" # Every Sunday at 1300 hrs = 1800 GMT
     #- cron: "0 15 * * 2" # Every Tuesday at 1000 hrs = 1500 UTC
 
