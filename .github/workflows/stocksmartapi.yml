@@ -138,9 +138,9 @@ jobs:
 
       - name: create gh-release
         run: |
-          upstream_url <- usethis::git_remotes()[["origin"]]
-          usethis::use_git_remote(name="origin",url=upstream_url)
-          usethis::use_github_release(publish = F)
+            upstream_url <- usethis::git_remotes()[["upstream"]]
+            usethis::use_git_remote(name="origin",url=upstream_url)
+            usethis::use_github_release(publish = F)
         shell: Rscript {0}
 
 
