@@ -136,7 +136,7 @@ jobs:
       - name: create gh-release
         run: |
           usethis::use_github_release()
-        shell: Rscript{0}
+        shell: Rscript {0}
 
 
 #       - name: Autoincrement a new patch version
