@@ -6,7 +6,7 @@ on:
     #- cron: "0 6 * * 1-5" # Every day at 1am EST = 0600 GMT
     #- cron: "0 */4 * * *" # Every 4th hour on
     #- cron: "0 * * * *" # Every hour on hour
-    - cron: "30 * * * *" # Every hour 30th minute
+    - cron: "*/30 * * * *" # Every hour 30th minute
     #- cron: "*/20 * * * *" # Every 20 minutes
     #- cron: "0 18 * * 0" # Every Sunday at 1300 hrs = 1800 GMT
     #- cron: "0 15 * * 2" # Every Tuesday at 1000 hrs = 1500 UTC
@@ -139,13 +139,4 @@ jobs:
         shell: Rscript {0}
 
 
-#       - name: Autoincrement a new patch version
-      #   run: |
-      #     echo "NEW_PATCH_VERSION=$((${{ env.PATCH_VERSION }}+1))" >> $GITHUB_ENV
-      # - name: Update patch version
-      #   uses: hmanzur/actions-set-secret@v2.0.0
-      #   with:
-      #     name: 'PATCH_VERSION'
-      #     value: ${{ env.NEW_PATCH_VERSION }}
-      #     repository: ${{ github.repository }}
-      #     token: ${{ secrets.REPO_ACCESS_TOKEN }}
+
