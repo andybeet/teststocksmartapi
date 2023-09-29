@@ -4,7 +4,8 @@
 
 update_description <- function(compare,digit){
 
-  if (!length(compare)) {
+  numRows <- unlist(lapply(compare,nrow))
+  if (!(any(numRows>0))) {
     # empty list. No changes found between new and old data
     # no changes to news.md or DESCRIPTION
     version <- NULL
