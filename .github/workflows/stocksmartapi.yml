@@ -41,7 +41,7 @@ jobs:
 
       - name: Install packages
         run: |
-          install.packages(c("remotes","dplyr", "httr", "here","readxl", "usethis","kableExtra","rmarkdown"))
+          install.packages(c("remotes","dplyr", "httr", "here","readxl", "usethis","kableExtra","rmarkdown","rlang"))
           remotes::install_github("NOAA-EDAB/stocksmart")
         shell: Rscript {0}
 
@@ -138,7 +138,9 @@ jobs:
 
       - name: create gh-release
         run: |
-          usethis::use_github_release()
+          upstream_url <- usethis::git_remotes()[["origin"]]
+          usethis::use_git_remote(name="origin",url=upstream_url)
+          usethis::use_github_release(publish = F)
         shell: Rscript {0}
 
 
