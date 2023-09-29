@@ -26,10 +26,10 @@ compareData <- function() {
       sumspeciesRemoved <- dplyr::setdiff(c1,n1)
 
   } else {
-    sumcolsAdded <- 0
-    sumcolsRemoved <- 0
-    sumspeciesAdded <- 0
-    sumspeciesRemoved <- 0
+    sumcolsAdded <- data.frame()
+    sumcolsRemoved <- data.frame()
+    sumspeciesAdded <- data.frame()
+    sumspeciesRemoved <- data.frame()
   }
 
 
@@ -63,10 +63,10 @@ compareData <- function() {
 
 
   } else {
-    datcolsAdded <- 0
-    datcolsRemoved <- 0
-    datspeciesAdded <- 0
-    datspeciesRemoved <- 0
+    datcolsAdded <- data.frame()
+    datcolsRemoved <- data.frame()
+    datspeciesAdded <- data.frame()
+    datspeciesRemoved <- data.frame()
   }
 
   params  <-  list(
