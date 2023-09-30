@@ -20,9 +20,8 @@ jobs:
     permissions:
       contents: write
     env:
-      GITHUB_PAT: ${{ secrets.CREATE_GITHUB_RELEASE }}
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       R_REMOTES_NO_ERRORS_FROM_WARNINGS: false
-
 
     steps:
       - name: Checkout repo
