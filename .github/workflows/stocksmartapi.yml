@@ -15,19 +15,17 @@ on:
     #- cron: "0 15 * * 2" # Every Tuesday at 1000 hrs = 1500 UTC
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     env:
       GITHUB_PAT: ${{ secrets.GH_RELEASE }}
       R_REMOTES_NO_ERRORS_FROM_WARNINGS: false
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: set up pandoc
         uses: r-lib/actions/setup-pandoc@v2
@@ -142,10 +140,6 @@ jobs:
           git push
 
       - name: create gh-release
-
-            # upstream_url <- usethis::git_remotes()[["origin"]]
-            # usethis::use_git_remote(name="origin",url=upstream_url)
-
         run: |
             usethis::use_github_release(publish = F)
         shell: Rscript {0}
