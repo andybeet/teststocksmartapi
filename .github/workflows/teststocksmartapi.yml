@@ -7,23 +7,8 @@ jobs:
 
   build:
 
-    runs-on: ubuntu-latest
-    permissions:
-      actions: write
-      checks: write
-      contents: write
-      deployments: write
-      id-token: write
-      issues: write
-      packages: write
-      pages: write
-      pull-requests: write
-      repository-projects: write
-      security-events: write
-      statuses: write
-
     env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_PAT: ${{ secrets.GH_RELEASE }}
       R_REMOTES_NO_ERRORS_FROM_WARNINGS: false
 
     steps:
