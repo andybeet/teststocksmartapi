@@ -2,6 +2,8 @@ name: pull and process data from stocksmart website
 
 on:
   push:
+#    branches:
+#      - dev2 # this doesnt exist
 
 jobs:
   build:
@@ -34,6 +36,7 @@ jobs:
       - name: Install packages
         run: |
           install.packages(c("usethis"))
+          version <- NULL
         shell: Rscript {0}
 
       - name: create gh-release
@@ -42,7 +45,9 @@ jobs:
             # usethis::use_git_remote(name="origin",url=upstream_url)
 
         run: |
+            if(!is.null(version)){
             usethis::use_github_release(publish = F)
+            }
         shell: Rscript {0}
 
 
