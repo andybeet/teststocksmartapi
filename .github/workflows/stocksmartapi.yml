@@ -1,7 +1,7 @@
 name: pull and process data from stocksmart website
 
 on:
-  #push:
+  #=push:
   schedule:
     # uses UTC/GMT time (+ 5 hrs)
     - cron: "0 6 * * 1-5" # Every day at 1am EST = 0600 GMT
@@ -88,6 +88,8 @@ jobs:
           update_news(version,diffs)
           rmarkdown::render(here::here("data-raw/sendAsEmail.Rmd"),
                     params = diffs)
+
+          saveRDS(version,here::here("data-raw/version.rds"))
         shell: Rscript {0}
 
       - name: render readme.rmd
@@ -139,7 +141,10 @@ jobs:
 
       - name: create gh-release
         run: |
+            version <- readRDS(here::here("data-raw/version.rds"))
+            if(!is.null(version)){
             usethis::use_github_release(publish = F)
+            }
         shell: Rscript {0}
 
 
