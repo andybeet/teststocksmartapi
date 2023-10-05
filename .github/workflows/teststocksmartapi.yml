@@ -40,10 +40,6 @@ jobs:
         shell: Rscript {0}
 
       - name: create gh-release
-
-            # upstream_url <- usethis::git_remotes()[["origin"]]
-            # usethis::use_git_remote(name="origin",url=upstream_url)
-
         run: |
             if(!is.null(version)){
             usethis::use_github_release(publish = F)
