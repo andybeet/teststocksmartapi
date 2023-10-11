@@ -2,8 +2,8 @@ name: pull and process data from stocksmart website
 
 on:
   push:
-#    branches:
-#      - dev2 # this doesnt exist
+    branches:
+      - dev2 # this doesnt exist
 
 jobs:
   build:
