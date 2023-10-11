@@ -1,3 +1,15 @@
+# stocksmart 0.0.3
+
+Data pull: October 11, 2023
+
+## Summaries removed 
+
+* Pacific chub mackerel - Pacific Coast (172412): 2023
+
+## Time series removed 
+
+* Pacific chub mackerel - Pacific Coast (172412): 2023
+
 # stocksmart 0.0.2
 
 Data pull: September 28, 2023
