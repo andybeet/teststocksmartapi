@@ -1,3 +1,11 @@
+# stocksmart 0.0.4
+
+Data pull: October 26, 2023
+
+## Time series removed 
+
+* Lingcod - Southern Pacific Coast (167116): 2019
+
 # stocksmart 0.0.3
 
 Data pull: October 11, 2023
