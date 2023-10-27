@@ -1,3 +1,11 @@
+# stocksmart 0.0.5
+
+Data pull: October 27, 2023
+
+## Summaries added 
+
+* Pacific chub mackerel - Pacific Coast (172412): 2023
+
 # stocksmart 0.0.4
 
 Data pull: October 26, 2023
