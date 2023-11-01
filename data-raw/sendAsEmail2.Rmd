@@ -19,8 +19,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Summary
 
-```{r,echo=F,eval=T}
-a <- readLines(here::here("data-raw/dataPull.txt"))
+```{r datapull,echo=F,eval=T}
+a <- readLines(con=here::here("data-raw/datapull.txt"))
 writeLines(a)
 
 ```
