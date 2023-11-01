@@ -128,7 +128,7 @@ jobs:
 
           html_body: file://${{github.workspace}}/data-raw/sendAsEmail2.html
 
-          attachments: ./data-raw/sendAsEmail.html
+          #attachments: ./data-raw/sendAsEmail.html
 
 
 

@@ -94,4 +94,4 @@ kableExtra::kable(params$datcolRem,col.names =NULL)
 
 * [test Stocksmart](https://github.com/andybeet/teststocksmartapi)
 
-* [main stocksmart](https://github.com/andybeet/stocksmart)
+* [main stocksmart](https://github.com/NOAA-EDAB/stocksmart)

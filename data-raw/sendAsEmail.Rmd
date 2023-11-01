@@ -17,6 +17,14 @@ date: "`r Sys.time()`"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## Summary
+
+```{r datapull,echo=F,eval=T}
+a <- readLines(con=here::here("data-raw/datapull.txt"))
+writeLines(a)
+
+```
+
 # Summary data changes
 
 ### Species Added
@@ -79,7 +87,11 @@ kableExtra::kable(params$datcolRem,col.names =NULL)
 ```
 
 
+
+
+
 ## Links to repos:
 
-[test Stocksmart](https://github.com/andybeet/teststocksmartapi)
-[main stocksmart](https://github.com/andybeet/stocksmart)
+* [test Stocksmart](https://github.com/andybeet/teststocksmartapi)
+
+* [main stocksmart](https://github.com/NOAA-EDAB/stocksmart)
