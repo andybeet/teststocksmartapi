@@ -39,27 +39,27 @@ update_news <- function(version,compare){
 
     # write changes to top of file then write old news
     if(!is.null(compare$sumrowAdd) && nrow(compare$sumrowAdd)>0) {
-      writeLines("## Summaries added ",con)
+      writeLines("### Summaries added ",con)
       writeLines("",con)
 
       write_to_news(compare$sumrowAdd,con)
 
     }
     if(!is.null(compare$sumrowRem) && nrow(compare$sumrowRem)>0) {
-      writeLines("## Summaries removed ",con)
+      writeLines("### Summaries removed ",con)
       writeLines("",con)
 
       write_to_news(compare$sumrowRem,con)
 
     }
     if(!is.null(compare$datrowAdd) && nrow(compare$datrowAdd)>0) {
-      writeLines("## Time series added ",con)
+      writeLines("### Time series added ",con)
       writeLines("",con)
 
       write_to_news(compare$datarowAdd,con)
     }
     if(!is.null(compare$datrowRem) && nrow(compare$datrowRem)>0) {
-      writeLines("## Time series removed ",con)
+      writeLines("### Time series removed ",con)
       writeLines("",con)
 
       write_to_news(compare$datrowRem,con)
