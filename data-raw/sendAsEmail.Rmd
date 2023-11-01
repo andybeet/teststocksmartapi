@@ -77,3 +77,9 @@ kableExtra::kable(params$datcolAdd,col.names =NULL)
 ```{r, echo = F}
 kableExtra::kable(params$datcolRem,col.names =NULL)
 ```
+
+
+## Links to repos:
+
+[test Stocksmart](https://github.com/andybeet/teststocksmartapi)
+[main stocksmart](https://github.com/andybeet/stocksmart)
