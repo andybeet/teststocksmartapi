@@ -1,9 +1,16 @@
 name: pull and process data from stocksmart website
 
 on:
-  push:
-    branches:
-      - dev2 # this doesnt exist
+  #=push:
+  schedule:
+    # uses UTC/GMT time (+ 5 hrs)
+    #- cron: "0 6 * * 1-5" # Every day at 1am EST = 0600 GMT
+    #- cron: "0 */4 * * *" # Every 4th hour on
+    #- cron: "0 * * * *" # Every hour on hour
+    #- cron: "*/30 * * * *" # Every hour 30th minute
+    - cron: "*/20 * * * *" # Every 20 minutes
+    #- cron: "0 18 * * 0" # Every Sunday at 1300 hrs = 1800 GMT
+    #- cron: "0 15 * * 2" # Every Tuesday at 1000 hrs = 1500 UTC
 
 jobs:
   build:
@@ -35,18 +42,92 @@ jobs:
 
       - name: Install packages
         run: |
-          install.packages(c("usethis","here"))
-          version <- NULL
+          install.packages(c("remotes","dplyr", "httr", "here","readxl", "usethis","kableExtra","rmarkdown","rlang"))
+          remotes::install_github("NOAA-EDAB/stocksmart")
+        shell: Rscript {0}
+
+      - name: Save current rdas
+        run: |
+          load(here::here("data/stockAssessmentSummary.rda"))
+          load(here::here("data/stockAssessmentData.rda"))
+          saveRDS(stockAssessmentSummary,here::here("data-raw/tempSummary.rds"))
+          saveRDS(stockAssessmentData,here::here("data-raw/tempData.rds"))
+          rm(stockAssessmentData)
+          rm(stockAssessmentSummary)
+        shell: Rscript {0}
+
+      - name: Pull stocksmart data
+        run: |
+          options(timeout = 60 * 60 * 6)
+          source(here::here("data-raw/query_stocksmart_api.R"))
+          query_stocksmart_api()
+        shell: Rscript {0}
+
+      - name: Process stocksmart data
+        run: |
+          options(timeout = 60 * 60 * 6)
+          source(here::here("data-raw/process_stocksmart_ts_data.R"))
+          out <- process_stocksmart_ts_data(exportFile=TRUE,isRunLocal=F)
+          saveRDS(out$summaryData,here::here("data-raw/newSummary.rds"))
+          saveRDS(out$tsData,here::here("data-raw/newData.rds"))
+#         incorporate difference check (below) prior to writing to repo or save as RDS and
+#         and write to repo later
+        shell: Rscript {0}
+
+      - name: Compare current pull with existing & Update
+      # creates an rmd to send as email
+      # adds content to news.md
+      # increments package version in description
+        run: |
+          options(timeout = 60 * 60 * 6)
+          source(here::here("data-raw/compareData.r"))
+          source(here::here("data-raw/update_description.R"))
+          source(here::here("data-raw/update_news.R"))
+          diffs <- compareData()
+          version <- update_description(diffs,digit=3)
+          update_news(version,diffs)
+          rmarkdown::render(here::here("data-raw/sendAsEmail.Rmd"),
+                    params = diffs)
+          rmarkdown::render(here::here("data-raw/sendAsEmail2.Rmd"),
+                    params = diffs)
+
           saveRDS(version,here::here("data-raw/version.rds"))
         shell: Rscript {0}
 
-      - name: create gh-release
+      - name: render readme.rmd
         run: |
-            version <- readRDS(here::here("data-raw/version.rds"))
-            if(!is.null(version)){
-            usethis::use_github_release(publish = F)
-            }
+          options(timeout = 60 * 60 * 6)
+          rmarkdown::render(here::here("README.Rmd"))
         shell: Rscript {0}
+
+      #- name: Find differences
+      # Create text explaining differences and append to news.md and release notes
+
+      #- name: Find differences
+      # Create text explaining differences and append to news.md and release notes
+
+      # Send email indicating if anything has changed
+      - name: Send email
+        uses: dawidd6/action-send-mail@v3
+
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+
+          subject: Github Actions job result
+          to: andrew.beet@noaa.gov
+
+          from: testapi Stocksmart GitHub # OR 'Luke Skywalker <user@example.com>'
+
+          #body: file://${{github.workspace}}/data-raw/datapull.txt
+
+          html_body: file://${{github.workspace}}/data-raw/sendAsEmail2.html
+
+          attachments: ./data-raw/sendAsEmail.html
+
 
 
 

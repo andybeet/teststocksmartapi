@@ -1,0 +1,97 @@
+---
+title: "Report from stocksmart data pull"
+output: html_document
+params: 
+  sumrowAdd: NA
+  sumrowRem: NA
+  sumcolAdd: NA
+  sumcolRem: NA
+  datrowAdd: NA
+  datrowRem: NA
+  datcolAdd: NA
+  datcolRem: NA
+date: "`r Sys.time()`"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Summary
+
+```{r,echo=F,eval=T}
+a <- readLines(here::here("data-raw/dataPull.txt"))
+writeLines(a)
+
+```
+
+# Summary data changes
+
+### Species Added
+```{r, echo = F}
+if(nrow(params$sumrowAdd)>0) {
+  params$sumrowAdd %>%
+    dplyr::mutate(`ITIS Taxon Serial Number` = paste0("(",`ITIS Taxon Serial Number`,"):")) %>%
+    kableExtra::kable()
+}
+```
+
+### Species Removed
+```{r, echo = F}
+if(nrow(params$sumrowRem)>0){
+params$sumrowRem %>%
+  dplyr::mutate(`ITIS Taxon Serial Number` = paste0("(",`ITIS Taxon Serial Number`,"):")) %>%
+  kableExtra::kable(col.names =NULL)
+}
+```
+
+### Columns added
+```{r, echo = F}
+kableExtra::kable(params$sumcolAdd,col.names =NULL)
+```
+
+### Columns removed
+```{r, echo = F}
+kableExtra::kable(params$sumcolRem,col.names =NULL)
+```
+
+
+# Time series data changes
+
+### Species Added
+```{r, echo = F}
+if(nrow(params$datrowAdd)>0){
+  params$datrowAdd %>% 
+    dplyr::mutate(ITIS = paste0("(",ITIS,"):")) %>%
+    kableExtra::kable()
+}
+```
+
+### Species Removed
+```{r, echo = F}
+if(nrow(params$datrowRem)>0) {
+  params$datrowRem %>% 
+    dplyr::mutate(ITIS = paste0("(",ITIS,"):")) %>%
+    kableExtra::kable(col.names =NULL)
+}
+```
+
+### Columns added
+```{r, echo = F}
+kableExtra::kable(params$datcolAdd,col.names =NULL)
+```
+
+### Columns removed
+```{r, echo = F}
+kableExtra::kable(params$datcolRem,col.names =NULL)
+```
+
+
+
+
+
+## Links to repos:
+
+* [test Stocksmart](https://github.com/andybeet/teststocksmartapi)
+
+* [main stocksmart](https://github.com/andybeet/stocksmart)
