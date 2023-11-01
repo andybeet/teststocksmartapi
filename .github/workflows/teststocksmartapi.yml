@@ -1,7 +1,9 @@
 name: pull and process data from stocksmart website
 
 on:
-  push: main
+  push:
+    branches:
+      - main
   #schedule:
     # uses UTC/GMT time (+ 5 hrs)
     #- cron: "0 6 * * 1-5" # Every day at 1am EST = 0600 GMT
