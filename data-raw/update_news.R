@@ -56,7 +56,7 @@ update_news <- function(version,compare){
       writeLines("### Time series added ",con)
       writeLines("",con)
 
-      write_to_news(compare$datarowAdd,con)
+      write_to_news(compare$datrowAdd,con)
     }
     if(!is.null(compare$datrowRem) && nrow(compare$datrowRem)>0) {
       writeLines("### Time series removed ",con)
