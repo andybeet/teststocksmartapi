@@ -1,3 +1,17 @@
+# stocksmart 0.0.7
+
+Data pull: November 07, 2023
+
+### Summaries added 
+
+* Pacific halibut - Pacific Coast / Alaska (172932): 2021
+* Pacific halibut - Pacific Coast / Alaska (172932): 2022
+
+### Time series added 
+
+* Pacific halibut - Pacific Coast / Alaska (172932): 2022
+* Pacific halibut - Pacific Coast / Alaska (172932): 2021
+
 # stocksmart 0.0.6
 
 Data pull: October 30, 2023
