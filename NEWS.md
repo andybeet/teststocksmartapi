@@ -1,3 +1,12 @@
+# stocksmart 0.0.11
+
+Data pull: November 13, 2023
+
+### Summaries removed 
+
+* Copper rockfish - Northern California (166713): 2023
+* Copper rockfish - Southern California (166713): 2023
+
 # stocksmart 0.0.10
 
 Data pull: November 10, 2023
