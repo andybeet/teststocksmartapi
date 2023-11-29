@@ -1,3 +1,14 @@
+# stocksmart 0.0.17
+
+Data pull: November 29, 2023
+
+### Summaries removed 
+
+* Pacific halibut - Pacific Coast / Alaska (172932): 2021
+* Pacific halibut - Pacific Coast / Alaska (172932): 2022
+* Copper rockfish - Northern California (166713): 2023
+* Copper rockfish - Southern California (166713): 2023
+
 # stocksmart 0.0.16
 
 Data pull: November 20, 2023
