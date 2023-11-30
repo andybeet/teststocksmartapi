@@ -1,3 +1,13 @@
+# stocksmart 0.0.18
+
+Data pull: November 30, 2023
+
+### Time series added 
+
+* Atlantic menhaden - Atlantic Coast (NA): 2022
+* Gray snapper - Gulf of Mexico (NA): 2022
+* Pacific hake - Pacific Coast (NA): 2023
+
 # stocksmart 0.0.17
 
 Data pull: November 29, 2023
