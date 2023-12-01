@@ -1,3 +1,37 @@
+# stocksmart 0.0.19
+
+Data pull: December 01, 2023
+
+### Summaries added 
+
+* Pacific halibut - Pacific Coast / Alaska (172932): 2021
+* Pacific halibut - Pacific Coast / Alaska (172932): 2022
+* Copper rockfish - Northern California (166713): 2023
+* Copper rockfish - Southern California (166713): 2023
+
+### Time series added 
+
+* Acadian redfish - Gulf of Maine / Georges Bank (NA): 2023
+* Atlantic mackerel - Gulf of Maine / Cape Hatteras (NA): 2023
+* Blue shark - North Atlantic (NA): 2023
+* Copper rockfish - Northern California (166713): 2023
+* Copper rockfish - Southern California (166713): 2023
+* Pacific halibut - Pacific Coast / Alaska (172932): 2022
+* Pacific halibut - Pacific Coast / Alaska (172932): 2021
+* Red hake - Gulf of Maine / Northern Georges Bank (NA): 2023
+* Red hake - Southern Georges Bank / Mid-Atlantic (NA): 2023
+* Sailfish - Western Atlantic (NA): 2023
+* Spiny dogfish - Atlantic Coast (NA): 2023
+* Windowpane - Gulf of Maine / Georges Bank (NA): 2023
+* Windowpane - Southern New England / Mid-Atlantic (NA): 2023
+
+### Time series removed 
+
+* Copper rockfish - Northern California (NA): 2023
+* Copper rockfish - Southern California (NA): 2023
+* Pacific halibut - Pacific Coast / Alaska (NA): 2022
+* Pacific halibut - Pacific Coast / Alaska (NA): 2021
+
 # stocksmart 0.0.18
 
 Data pull: November 30, 2023
