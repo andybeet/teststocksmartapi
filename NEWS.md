@@ -1,3 +1,22 @@
+# stocksmart 0.0.20
+
+Data pull: December 04, 2023
+
+### Summaries added 
+
+* Atlantic menhaden - Atlantic Coast (161732): 2022
+* Blue shark - North Atlantic (160424): 2023
+* Sailfish - Western Atlantic (172488): 2023
+* Gray snapper - Gulf of Mexico (168848): 2022
+* Atlantic mackerel - Gulf of Maine / Cape Hatteras (172414): 2023
+* Acadian redfish - Gulf of Maine / Georges Bank (166774): 2023
+* Red hake - Gulf of Maine / Northern Georges Bank (164730): 2023
+* Red hake - Southern Georges Bank / Mid-Atlantic (164730): 2023
+* Windowpane - Gulf of Maine / Georges Bank (172746): 2023
+* Windowpane - Southern New England / Mid-Atlantic (172746): 2023
+* Spiny dogfish - Atlantic Coast (160617): 2023
+* Pacific hake - Pacific Coast (164792): 2023
+
 # stocksmart 0.0.19
 
 Data pull: December 01, 2023
