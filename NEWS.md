@@ -1,3 +1,11 @@
+# stocksmart 0.0.21
+
+Data pull: December 06, 2023
+
+### Time series added 
+
+* Canary rockfish - Pacific Coast (166734): 2005
+
 # stocksmart 0.0.20
 
 Data pull: December 04, 2023
