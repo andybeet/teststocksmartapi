@@ -1,3 +1,31 @@
+# stocksmart 0.0.22
+
+Data pull: December 12, 2023
+
+### Summaries added 
+
+* Black rockfish - North of Point Conception (166727): 2023
+* Black rockfish - Oregon (166727): 2023
+* Black rockfish - South of Point Conception (166727): 2023
+* Black rockfish - Washington (166727): 2023
+* Canary rockfish - Pacific Coast (166734): 2023
+* Petrale sole - Pacific Coast (172868): 2023
+* Rex sole - Pacific Coast (172978): 2023
+* Sablefish - Pacific Coast (167123): 2023
+* Shortspine thornyhead - Pacific Coast (166783): 2023
+
+### Time series added 
+
+* Black rockfish - North of Point Conception (166727): 2023
+* Black rockfish - Oregon (166727): 2023
+* Black rockfish - South of Point Conception (166727): 2023
+* Black rockfish - Washington (166727): 2023
+* Canary rockfish - Pacific Coast (166734): 2023
+* Petrale sole - Pacific Coast (172868): 2023
+* Rex sole - Pacific Coast (172978): 2023
+* Sablefish - Pacific Coast (167123): 2023
+* Shortspine thornyhead - Pacific Coast (166783): 2023
+
 # stocksmart 0.0.21
 
 Data pull: December 06, 2023
