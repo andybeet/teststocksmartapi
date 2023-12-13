@@ -1,3 +1,15 @@
+# stocksmart 0.0.23
+
+Data pull: December 13, 2023
+
+### Summaries added 
+
+* Bering Sea / Aleutian Islands Blackspotted and Rougheye Rockfish Complex (NA): 2021
+
+### Time series added 
+
+* Bering Sea / Aleutian Islands Blackspotted and Rougheye Rockfish Complex (NA): 2021
+
 # stocksmart 0.0.22
 
 Data pull: December 12, 2023
