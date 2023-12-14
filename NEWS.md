@@ -1,3 +1,25 @@
+# stocksmart 0.0.24
+
+Data pull: December 14, 2023
+
+### Summaries added 
+
+* Bering Sea / Aleutian Islands Blackspotted and Rougheye Rockfish Complex (NA): 2022
+* Eastern Bering Sea Blackspotted and Rougheye Rockfish Complex (NA): 2020
+* Eastern Bering Sea Blackspotted and Rougheye Rockfish Complex (NA): 2021
+* Eastern Bering Sea Blackspotted and Rougheye Rockfish Complex (NA): 2022
+* Northern rock sole - Gulf of Alaska (616392): 2011
+* Rock sole - Gulf of Alaska (172917): 2011
+
+### Time series added 
+
+* Bering Sea / Aleutian Islands Blackspotted and Rougheye Rockfish Complex (NA): 2022
+* Eastern Bering Sea Blackspotted and Rougheye Rockfish Complex (NA): 2022
+* Eastern Bering Sea Blackspotted and Rougheye Rockfish Complex (NA): 2021
+* Eastern Bering Sea Blackspotted and Rougheye Rockfish Complex (NA): 2020
+* Northern rock sole - Gulf of Alaska (616392): 2011
+* Rock sole - Gulf of Alaska (172917): 2011
+
 # stocksmart 0.0.23
 
 Data pull: December 13, 2023
