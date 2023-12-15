@@ -1,3 +1,31 @@
+# stocksmart 0.0.25
+
+Data pull: December 15, 2023
+
+### Summaries removed 
+
+* Northern rock sole - Gulf of Alaska (616392): 2011
+* Rock sole - Gulf of Alaska (172917): 2011
+
+### Time series added 
+
+* Northern rock sole - Gulf of Alaska (NA): 2012
+* Northern rock sole - Gulf of Alaska (NA): 2011
+* Rock sole - Gulf of Alaska (NA): 2019
+* Rock sole - Gulf of Alaska (NA): 2018
+* Rock sole - Gulf of Alaska (NA): 2017
+* Rock sole - Gulf of Alaska (NA): 2016
+* Rock sole - Gulf of Alaska (NA): 2015
+* Rock sole - Gulf of Alaska (NA): 2014
+* Rock sole - Gulf of Alaska (NA): 2013
+* Rock sole - Gulf of Alaska (NA): 2012
+* Rock sole - Gulf of Alaska (NA): 2011
+
+### Time series removed 
+
+* Northern rock sole - Gulf of Alaska (616392): 2011
+* Rock sole - Gulf of Alaska (172917): 2011
+
 # stocksmart 0.0.24
 
 Data pull: December 14, 2023
