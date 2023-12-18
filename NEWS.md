@@ -1,3 +1,86 @@
+# stocksmart 0.0.26
+
+Data pull: December 18, 2023
+
+### Summaries added 
+
+* Northern rock sole - Gulf of Alaska (616392): 2011
+* Northern rock sole - Gulf of Alaska (616392): 2012
+* Northern rock sole - Gulf of Alaska (616392): 2013
+* Northern rock sole - Gulf of Alaska (616392): 2014
+* Northern rock sole - Gulf of Alaska (616392): 2015
+* Northern rock sole - Gulf of Alaska (616392): 2016
+* Rock sole - Gulf of Alaska (172917): 2011
+* Rock sole - Gulf of Alaska (172917): 2012
+* Rock sole - Gulf of Alaska (172917): 2013
+* Rock sole - Gulf of Alaska (172917): 2014
+* Rock sole - Gulf of Alaska (172917): 2015
+* Rock sole - Gulf of Alaska (172917): 2016
+* Rock sole - Gulf of Alaska (172917): 2017
+* Rock sole - Gulf of Alaska (172917): 2018
+* Rock sole - Gulf of Alaska (172917): 2019
+* Vermilion rockfish and Sunset rockfish Complex - Northern California (NA): 2021
+* Vermilion rockfish and Sunset rockfish Complex - Southern California (NA): 2021
+* Black jack - American Samoa (168613): 2023
+* Common bluestripe snapper - American Samoa (168862): 2023
+* Flame snapper - American Samoa (168905): 2023
+* Golden eye jobfish - American Samoa (168920): 2023
+* Green jobfish - American Samoa (168926): 2023
+* Oblique-banded snapper - American Samoa (168919): 2023
+* Rusty jobfish - American Samoa (168929): 2023
+* Spotcheek emperor - American Samoa (169157): 2023
+* Yellow-edged lyretail - American Samoa (167920): 2023
+
+### Summaries removed 
+
+* Vermilion and Sunset Rockfish Complex - Southern California (NA): 2021
+* Vermilion and Sunset rockfish Complex - Northern California (NA): 2021
+
+### Time series added 
+
+* Black jack - American Samoa (168613): 2023
+* Common bluestripe snapper - American Samoa (168862): 2023
+* Flame snapper - American Samoa (168905): 2023
+* Golden eye jobfish - American Samoa (168920): 2023
+* Green jobfish - American Samoa (168926): 2023
+* Northern rock sole - Gulf of Alaska (616392): 2016
+* Northern rock sole - Gulf of Alaska (616392): 2015
+* Northern rock sole - Gulf of Alaska (616392): 2014
+* Northern rock sole - Gulf of Alaska (616392): 2013
+* Northern rock sole - Gulf of Alaska (616392): 2012
+* Northern rock sole - Gulf of Alaska (616392): 2011
+* Oblique-banded snapper - American Samoa (168919): 2023
+* Rock sole - Gulf of Alaska (172917): 2019
+* Rock sole - Gulf of Alaska (172917): 2018
+* Rock sole - Gulf of Alaska (172917): 2017
+* Rock sole - Gulf of Alaska (172917): 2016
+* Rock sole - Gulf of Alaska (172917): 2015
+* Rock sole - Gulf of Alaska (172917): 2014
+* Rock sole - Gulf of Alaska (172917): 2013
+* Rock sole - Gulf of Alaska (172917): 2012
+* Rock sole - Gulf of Alaska (172917): 2011
+* Rusty jobfish - American Samoa (168929): 2023
+* Spotcheek emperor - American Samoa (169157): 2023
+* Vermilion rockfish and Sunset rockfish Complex - Northern California (NA): 2021
+* Vermilion rockfish and Sunset rockfish Complex - Southern California (NA): 2021
+* Yellow-edged lyretail - American Samoa (167920): 2023
+
+### Time series removed 
+
+* Northern rock sole - Gulf of Alaska (NA): 2012
+* Northern rock sole - Gulf of Alaska (NA): 2011
+* Rock sole - Gulf of Alaska (NA): 2019
+* Rock sole - Gulf of Alaska (NA): 2018
+* Rock sole - Gulf of Alaska (NA): 2017
+* Rock sole - Gulf of Alaska (NA): 2016
+* Rock sole - Gulf of Alaska (NA): 2015
+* Rock sole - Gulf of Alaska (NA): 2014
+* Rock sole - Gulf of Alaska (NA): 2013
+* Rock sole - Gulf of Alaska (NA): 2012
+* Rock sole - Gulf of Alaska (NA): 2011
+* Vermilion and Sunset Rockfish Complex - Southern California (NA): 2021
+* Vermilion and Sunset rockfish Complex - Northern California (NA): 2021
+
 # stocksmart 0.0.25
 
 Data pull: December 15, 2023
