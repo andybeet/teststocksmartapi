@@ -1,3 +1,27 @@
+# stocksmart 0.0.27
+
+Data pull: December 20, 2023
+
+### Summaries added 
+
+* Queen triggerfish - Puerto Rico (173139): 2022
+* Gag - Gulf of Mexico (167759): 2023
+* Lane snapper - Gulf of Mexico (168860): 2023
+* Vermilion snapper - Gulf of Mexico (168909): 2023
+* Chinook salmon - Eastern North Pacific Far North Migrating (161980): 2022
+* Blue shark - North Pacific (160424): 2023
+* Skipjack tuna - Western and Central Pacific (172401): 2022
+* King mackerel - Gulf of Mexico (172435): 2023
+
+### Time series added 
+
+* Blue shark - North Pacific (160424): 2023
+* Gag - Gulf of Mexico (167759): 2023
+* King mackerel - Gulf of Mexico (172435): 2023
+* Lane snapper - Gulf of Mexico (168860): 2023
+* Queen triggerfish - Puerto Rico (173139): 2022
+* Vermilion snapper - Gulf of Mexico (168909): 2023
+
 # stocksmart 0.0.26
 
 Data pull: December 18, 2023
