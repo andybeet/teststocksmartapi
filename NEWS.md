@@ -1,3 +1,17 @@
+# stocksmart 0.0.28
+
+Data pull: January 09, 2024
+
+### Time series added 
+
+* Chinook salmon - Eastern North Pacific Far North Migrating (NA): 2018
+* Coho salmon - Auke Creek (NA): 2018
+* Coho salmon - Berners River (NA): 2020
+* Coho salmon - Berners River (NA): 2019
+* Coho salmon - Berners River (NA): 2018
+* Coho salmon - Hugh Smith Lake (NA): 2019
+* Coho salmon - Hugh Smith Lake (NA): 2018
+
 # stocksmart 0.0.27
 
 Data pull: December 20, 2023
