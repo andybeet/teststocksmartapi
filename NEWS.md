@@ -1,3 +1,27 @@
+# stocksmart 0.0.33
+
+Data pull: February 13, 2024
+
+### Summaries added 
+
+* Yellowfin sole - Bering Sea / Aleutian Islands (172907): 2023
+* Rock sole - Central Gulf of Alaska (172917): 2023
+* Black rockfish - Point Conception / Oregon Border (166727): 2023
+
+### Summaries removed 
+
+* Black rockfish - North of Point Conception (166727): 2023
+
+### Time series added 
+
+* Black rockfish - Point Conception / Oregon Border (166727): 2023
+* Rock sole - Central Gulf of Alaska (172917): 2023
+* Yellowfin sole - Bering Sea / Aleutian Islands (172907): 2023
+
+### Time series removed 
+
+* Black rockfish - North of Point Conception (166727): 2023
+
 # stocksmart 0.0.32
 
 Data pull: February 06, 2024
