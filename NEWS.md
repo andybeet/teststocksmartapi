@@ -1,3 +1,17 @@
+# stocksmart 0.0.34
+
+Data pull: March 05, 2024
+
+### Summaries added 
+
+* American Samoa Bottomfish Multi-species Complex (NA): 2015
+* American Samoa Bottomfish Multi-species Complex (NA): 2019
+
+### Time series added 
+
+* American Samoa Bottomfish Multi-species Complex (NA): 2019
+* American Samoa Bottomfish Multi-species Complex (NA): 2015
+
 # stocksmart 0.0.33
 
 Data pull: February 13, 2024
