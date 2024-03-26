@@ -1,3 +1,17 @@
+# stocksmart 0.0.35
+
+Data pull: March 26, 2024
+
+### Summaries added 
+
+* Blue king crab - Pribilof Islands (97936): 2023
+* Snow crab - Bering Sea (98428): 2023
+
+### Time series added 
+
+* Blue king crab - Pribilof Islands (97936): 2023
+* Snow crab - Bering Sea (98428): 2023
+
 # stocksmart 0.0.34
 
 Data pull: March 05, 2024
