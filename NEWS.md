@@ -1,3 +1,23 @@
+# stocksmart 0.0.37
+
+Data pull: May 28, 2024
+
+### Summaries removed 
+
+* Atlantic Large Coastal Shark Complex (NA): 2006
+* Atlantic sharpnose shark - Atlantic (160200): 2007
+* Blacknose shark - Atlantic (160304): 2007
+* Bonnethead - Atlantic (160502): 2007
+* Bonnethead - Atlantic (160502): 2013
+* Cobia - Southern Atlantic Coast (168566): 2013
+* Cobia - Southern Atlantic Coast (168566): 2020
+
+### Time series removed 
+
+* Bonnethead - Atlantic (160502): 2007
+* Cobia - Southern Atlantic Coast (168566): 2020
+* Cobia - Southern Atlantic Coast (168566): 2013
+
 # stocksmart 0.0.36
 
 Data pull: May 21, 2024
