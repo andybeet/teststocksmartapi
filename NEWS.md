@@ -1,3 +1,17 @@
+# stocksmart 0.0.38
+
+Data pull: June 04, 2024
+
+### Summaries added 
+
+* Red king crab - Bristol Bay (97935): 2023
+* Southern Tanner crab - Bering Sea (98429): 2023
+
+### Time series added 
+
+* Red king crab - Bristol Bay (97935): 2023
+* Southern Tanner crab - Bering Sea (98429): 2023
+
 # stocksmart 0.0.37
 
 Data pull: May 28, 2024
