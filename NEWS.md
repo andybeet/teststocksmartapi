@@ -1,3 +1,47 @@
+# stocksmart 0.0.39
+
+Data pull: June 11, 2024
+
+### Summaries added 
+
+* Caribbean spiny lobster - Puerto Rico (97648): 2022
+* Caribbean spiny lobster - St. Croix (97648): 2022
+* Caribbean spiny lobster - St. Thomas / St. John (97648): 2022
+* Red grouper - Gulf of Mexico (167702): 2024
+* Silver hake - Gulf of Maine / Northern Georges Bank (164791): 2023
+* Silver hake - Southern Georges Bank / Mid-Atlantic (164791): 2023
+* Barndoor skate - Georges Bank / Southern New England (564139): 2023
+* Clearnose skate - Southern New England / Mid-Atlantic (160855): 2023
+* Little skate - Georges Bank / Southern New England (564130): 2023
+* Rosette skate - Southern New England / Mid-Atlantic (564136): 2023
+* Smooth skate - Gulf of Maine (564151): 2023
+* Thorny skate - Gulf of Maine (564149): 2023
+* Winter skate - Georges Bank / Southern New England (564145): 2023
+* Red king crab - Norton Sound (97935): 2024
+* Gulf of Alaska Blackspotted and Rougheye Rockfish Complex (NA): 2022
+* Weathervane scallop - Alaska (79757): 2024
+* Widow rockfish - Pacific Coast (166719): 2023
+* Yelloweye rockfish - Pacific Coast (166740): 2023
+* Albacore - North Pacific (172419): 2023
+
+### Time series added 
+
+* Albacore - North Pacific (172419): 2023
+* Barndoor skate - Georges Bank / Southern New England (564139): 2023
+* Clearnose skate - Southern New England / Mid-Atlantic (160855): 2023
+* Gulf of Alaska Blackspotted and Rougheye Rockfish Complex (NA): 2022
+* Little skate - Georges Bank / Southern New England (564130): 2023
+* Red king crab - Norton Sound (97935): 2024
+* Rosette skate - Southern New England / Mid-Atlantic (564136): 2023
+* Silver hake - Gulf of Maine / Northern Georges Bank (164791): 2023
+* Silver hake - Southern Georges Bank / Mid-Atlantic (164791): 2023
+* Smooth skate - Gulf of Maine (564151): 2023
+* Thorny skate - Gulf of Maine (564149): 2023
+* Weathervane scallop - Alaska (79757): 2024
+* Widow rockfish - Pacific Coast (166719): 2023
+* Winter skate - Georges Bank / Southern New England (564145): 2023
+* Yelloweye rockfish - Pacific Coast (166740): 2023
+
 # stocksmart 0.0.38
 
 Data pull: June 04, 2024
