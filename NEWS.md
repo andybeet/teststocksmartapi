@@ -1,3 +1,50 @@
+# stocksmart 0.0.40
+
+Data pull: July 02, 2024
+
+### Summaries added 
+
+* Alaska skate - Bering Sea / Aleutian Islands (160939): 2023
+* Bering Sea / Aleutian Islands Other Skates Complex (NA): 2023
+* Bering Sea / Aleutian Islands Sculpin Complex (NA): 2023
+* Greenland halibut - Bering Sea / Aleutian Islands (172930): 2023
+* Northern rock sole - Bering Sea / Aleutian Islands (616392): 2023
+* Walleye pollock - Eastern Bering Sea (934083): 2023
+* Dover sole - Gulf of Alaska (172887): 2023
+* Gulf of Alaska Blackspotted and Rougheye Rockfish Complex (NA): 2023
+* Gulf of Alaska Other Shallow Water Flatfish Complex (NA): 2023
+* Gulf of Alaska Sculpin Complex (NA): 2023
+* Gulf of Alaska Skate Complex (NA): 2023
+* Pacific ocean perch - Gulf of Alaska (166707): 2023
+* Sharpchin rockfish - Gulf of Alaska (166744): 2023
+* Walleye pollock - Southeast Gulf of Alaska (934083): 2023
+* Walleye pollock - Western / Central / West Yakutat Gulf of Alaska (934083): 2023
+* Bigeye tuna - Central Western Pacific (172428): 2023
+* Main Hawaiian Islands Deep 7 Bottomfish Multi-species Complex (NA): 2024
+* Guam Bottomfish Multi-species Complex (NA): 2024
+* Striped marlin - Central Western Pacific (768127): 2023
+* Yellowfin tuna - Central Western Pacific (172423): 2023
+
+### Time series added 
+
+* Alaska skate - Bering Sea / Aleutian Islands (160939): 2023
+* Bering Sea / Aleutian Islands Other Skates Complex (NA): 2023
+* Bering Sea / Aleutian Islands Sculpin Complex (NA): 2023
+* Dover sole - Gulf of Alaska (172887): 2023
+* Greenland halibut - Bering Sea / Aleutian Islands (172930): 2023
+* Guam Bottomfish Multi-species Complex (NA): 2024
+* Gulf of Alaska Blackspotted and Rougheye Rockfish Complex (NA): 2023
+* Gulf of Alaska Sculpin Complex (NA): 2023
+* Gulf of Alaska Skate Complex (NA): 2023
+* Main Hawaiian Islands Deep 7 Bottomfish Multi-species Complex (NA): 2024
+* Northern rock sole - Bering Sea / Aleutian Islands (616392): 2023
+* Pacific ocean perch - Gulf of Alaska (166707): 2023
+* Sharpchin rockfish - Gulf of Alaska (166744): 2023
+* Striped marlin - Central Western Pacific (768127): 2023
+* Walleye pollock - Eastern Bering Sea (934083): 2023
+* Walleye pollock - Southeast Gulf of Alaska (934083): 2023
+* Walleye pollock - Western / Central / West Yakutat Gulf of Alaska (934083): 2023
+
 # stocksmart 0.0.39
 
 Data pull: June 11, 2024
