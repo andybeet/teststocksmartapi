@@ -1,3 +1,25 @@
+# stocksmart 0.0.42
+
+Data pull: July 23, 2024
+
+### Summaries added 
+
+* Alaska plaice - Bering Sea / Aleutian Islands (172901): 2023
+* Bering Sea / Aleutian Islands Blackspotted and Rougheye Rockfish Complex (NA): 2023
+* Northern rockfish - Bering Sea / Aleutian Islands (166735): 2023
+* Dusky rockfish - Gulf of Alaska (644604): 2023
+* Pacific cod - Gulf of Alaska (164711): 2023
+* Shortraker rockfish - Gulf of Alaska (166712): 2023
+
+### Time series added 
+
+* Alaska plaice - Bering Sea / Aleutian Islands (172901): 2023
+* Bering Sea / Aleutian Islands Blackspotted and Rougheye Rockfish Complex (NA): 2023
+* Dusky rockfish - Gulf of Alaska (644604): 2023
+* Northern rockfish - Bering Sea / Aleutian Islands (166735): 2023
+* Pacific cod - Gulf of Alaska (164711): 2023
+* Shortraker rockfish - Gulf of Alaska (166712): 2023
+
 # stocksmart 0.0.41
 
 Data pull: July 16, 2024
