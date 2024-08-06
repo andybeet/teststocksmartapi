@@ -1,3 +1,17 @@
+# stocksmart 0.0.43
+
+Data pull: August 06, 2024
+
+### Summaries added 
+
+* Albacore - North Atlantic (172419): 2023
+* Black sea bass - Southern Atlantic Coast (167687): 2023
+
+### Time series added 
+
+* Albacore - North Atlantic (172419): 2023
+* Black sea bass - Southern Atlantic Coast (167687): 2023
+
 # stocksmart 0.0.42
 
 Data pull: July 23, 2024
