@@ -1,3 +1,15 @@
+# stocksmart 0.0.44
+
+Data pull: August 20, 2024
+
+### Time series added 
+
+* Pacific bluefin tuna - Pacific (172422): 2024
+
+### Time series removed 
+
+* Albacore - North Pacific (172419): 2023
+
 # stocksmart 0.0.43
 
 Data pull: August 06, 2024
