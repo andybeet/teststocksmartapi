@@ -1,3 +1,19 @@
+# stocksmart 0.0.45
+
+Data pull: September 17, 2024
+
+### Summaries added 
+
+* Atka mackerel - Bering Sea / Aleutian Islands (167120): 2023
+* Pacific cod - Aleutian Islands (164711): 2023
+* Rock sole - Western Gulf of Alaska (172917): 2023
+
+### Time series added 
+
+* Atka mackerel - Bering Sea / Aleutian Islands (167120): 2023
+* Pacific cod - Aleutian Islands (164711): 2023
+* Rock sole - Western Gulf of Alaska (172917): 2023
+
 # stocksmart 0.0.44
 
 Data pull: August 20, 2024
