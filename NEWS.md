@@ -1,3 +1,15 @@
+# stocksmart 0.0.46
+
+Data pull: October 01, 2024
+
+### Summaries added 
+
+* Atlantic salmon - Gulf of Maine (161996): 2023
+
+### Time series added 
+
+* Atlantic salmon - Gulf of Maine (161996): 2023
+
 # stocksmart 0.0.45
 
 Data pull: September 17, 2024
