@@ -25,10 +25,14 @@ compareDataLocal <- function() {
 
   if (!all(dim(current) == dim(new))) {# dimensions not same
     # find if columns added or removed
-      sumcolsAdded <- setdiff(names(new),names(current))
-      sumcolsRemoved <- setdiff(names(current),names(new))
-      sumspeciesAdded <- dplyr::setdiff(n1,c1)
-      sumspeciesRemoved <- dplyr::setdiff(c1,n1)
+      sumcolsAdded <- setdiff(names(new),names(current)) |>
+        dplyr::as_tibble()
+      sumcolsRemoved <- setdiff(names(current),names(new)) |>
+        dplyr::as_tibble()
+      sumspeciesAdded <- dplyr::setdiff(n1,c1) |>
+        dplyr::as_tibble()
+      sumspeciesRemoved <- dplyr::setdiff(c1,n1) |>
+        dplyr::as_tibble()
 
   } else {
     sumcolsAdded <- NULL
@@ -51,8 +55,10 @@ compareDataLocal <- function() {
 
   if (!all(dim(current) == dim(new))) { #dimensions not same
     # find if columns added or removed
-    datcolsAdded <- setdiff(names(new),names(current))
-    datcolsRemoved <- setdiff(names(current),names(new))
+    datcolsAdded <- setdiff(names(new),names(current)) |>
+      dplyr::as_tibble()
+    datcolsRemoved <- setdiff(names(current),names(new)) |>
+      dplyr::as_tibble()
 
     newsp <- new %>%
       dplyr::select(StockName,ITIS,StockArea,AssessmentYear) %>%
@@ -70,6 +76,16 @@ compareDataLocal <- function() {
     datspeciesAdded <- NULL
     datspeciesRemoved <- NULL
   }
+
+  # return(params = list(
+  #   sumrowAdd = sumspeciesAdded,
+  #   sumrowRem = sumspeciesRemoved,
+  #   sumcolAdd = sumcolsAdded,
+  #   sumcolRem = sumcolsRemoved,
+  #   datrowAdd = datspeciesAdded,
+  #   datrowRem = datspeciesRemoved,
+  #   datcolAdd = datcolsAdded,
+  #   datcolRem = datcolsRemoved))
 
   rmarkdown::render(here::here("data-raw/sendAsEmail.Rmd"),
                     params = list(
