@@ -1,3 +1,11 @@
+# stocksmart 0.0.47
+
+Data pull: October 15, 2024
+
+### Summaries added 
+
+* Tilefish - Mid-Atlantic Coast (168546): 2024
+
 # stocksmart 0.0.46
 
 Data pull: October 01, 2024
