@@ -1,8 +1,8 @@
 name: teststocksmartapi
 
 on:
-  push:
-    branches:
+  #push:
+    #branches:
       #- main
   #schedule:
     # uses UTC/GMT time (+ 5 hrs)
