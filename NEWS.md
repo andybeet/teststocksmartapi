@@ -1,3 +1,20 @@
+# stocksmart 0.0.48
+
+Data pull: November 05, 2024
+
+### Summaries added 
+
+* Blue marlin - Atlantic (172491): 2024
+* Yellowfin tuna - Western Atlantic (172423): 2024
+* Yellowedge grouper - Gulf of Mexico (167699): 2024
+* Pacific sardine - Northern Subpopulation (161729): 2024
+
+### Time series added 
+
+* Pacific sardine - Northern Subpopulation (161729): 2024
+* Yellowedge grouper - Gulf of Mexico (167699): 2024
+* Yellowfin tuna - Western Atlantic (172423): 2024
+
 # stocksmart 0.0.47
 
 Data pull: October 15, 2024
