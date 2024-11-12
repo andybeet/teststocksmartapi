@@ -1,3 +1,23 @@
+# stocksmart 0.0.49
+
+Data pull: November 12, 2024
+
+### Summaries added 
+
+* Red grouper - Gulf of Mexico (167702): 2020
+* Atlantic salmon - Gulf of Maine (161996): 2024
+* Golden king crab - Eastern Aleutian Islands (660179): 2024
+* Golden king crab - Western Aleutian Islands (660179): 2024
+* Pacific chub mackerel - Pacific Coast (172412): 2023
+
+### Time series added 
+
+* Atlantic salmon - Gulf of Maine (161996): 2024
+* Golden king crab - Eastern Aleutian Islands (660179): 2024
+* Golden king crab - Western Aleutian Islands (660179): 2024
+* Pacific chub mackerel - Pacific Coast (172412): 2023
+* Pollock - Gulf of Maine / Georges Bank (164727): 2022
+
 # stocksmart 0.0.48
 
 Data pull: November 05, 2024
