@@ -1,3 +1,15 @@
+# stocksmart 0.0.50
+
+Data pull: December 03, 2024
+
+### Summaries added 
+
+* Albacore - North Pacific (172419): 2023
+
+### Time series added 
+
+* Albacore - North Pacific (172419): 2023
+
 # stocksmart 0.0.49
 
 Data pull: November 12, 2024
