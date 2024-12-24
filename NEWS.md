@@ -1,3 +1,47 @@
+# stocksmart 0.0.51
+
+Data pull: December 24, 2024
+
+### Summaries added 
+
+* Striped marlin - Eastern Pacific (768127): 2010
+* Bigeye tuna - Eastern Pacific (172428): 2016
+* Bigeye tuna - Eastern Pacific (172428): 2017
+* Bigeye tuna - Eastern Pacific (172428): 2018
+* Bigeye tuna - Eastern Pacific (172428): 2020
+* Oceanic whitetip shark - Western and Central Pacific (160330): 2019
+* Silky shark - Western and Central Pacific (160310): 2013
+* Silky shark - Western and Central Pacific (160310): 2018
+* Yellowfin tuna - Central Western Pacific (172423): 2017
+* Yellowfin tuna - Central Western Pacific (172423): 2018
+* Yellowfin tuna - Central Western Pacific (172423): 2019
+* Yellowfin tuna - Central Western Pacific (172423): 2020
+* Skipjack tuna - Eastern Pacific (172401): 2014
+* Skipjack tuna - Eastern Pacific (172401): 2017
+* Skipjack tuna - Eastern Pacific (172401): 2018
+* Yellowfin tuna - Eastern Pacific (172423): 2016
+* Yellowfin tuna - Eastern Pacific (172423): 2017
+* Yellowfin tuna - Eastern Pacific (172423): 2018
+* Yellowfin tuna - Eastern Pacific (172423): 2020
+
+### Summaries removed 
+
+* Striped marlin - Eastern Tropical Pacific (768127): 2010
+* Bigeye tuna - Eastern Tropical Pacific (172428): 2016
+* Bigeye tuna - Eastern Tropical Pacific (172428): 2017
+* Bigeye tuna - Eastern Tropical Pacific (172428): 2018
+* Bigeye tuna - Eastern Tropical Pacific (172428): 2020
+* Oceanic whitetip shark - Tropical Pacific (160330): 2019
+* Silky shark - Tropical Pacific (160310): 2013
+* Silky shark - Tropical Pacific (160310): 2018
+* Skipjack tuna - Eastern Tropical Pacific (172401): 2014
+* Skipjack tuna - Eastern Tropical Pacific (172401): 2017
+* Skipjack tuna - Eastern Tropical Pacific (172401): 2018
+* Yellowfin tuna - Eastern Tropical Pacific (172423): 2016
+* Yellowfin tuna - Eastern Tropical Pacific (172423): 2017
+* Yellowfin tuna - Eastern Tropical Pacific (172423): 2018
+* Yellowfin tuna - Eastern Tropical Pacific (172423): 2020
+
 # stocksmart 0.0.50
 
 Data pull: December 03, 2024
