@@ -1,3 +1,18 @@
+# stocksmart 0.0.57
+
+Data pull: March 11, 2025
+
+### Summaries added 
+
+* Shortfin mako - North Pacific (159924): 2024
+* Tilefish - Southern Atlantic Coast (168546): 2024
+* Silky shark - Western and Central Pacific (160310): 2024
+
+### Time series added 
+
+* Shortfin mako - North Pacific (159924): 2024
+* Tilefish - Southern Atlantic Coast (168546): 2024
+
 # stocksmart 0.0.56
 
 Data pull: March 04, 2025
