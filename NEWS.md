@@ -1,3 +1,29 @@
+# stocksmart 0.0.58
+
+Data pull: March 18, 2025
+
+### Summaries added 
+
+* Chinook salmon - Puget Sound: Eastern Strait of Juan de Fuca Summer/Fall (161980): 2019
+* Chinook salmon - Puget Sound: Eastern Strait of Juan de Fuca Summer/Fall (161980): 2021
+* Chinook salmon - Puget Sound: Eastern Strait of Juan de Fuca Summer/Fall (161980): 2022
+* Chinook salmon - Puget Sound: Eastern Strait of Juan de Fuca Summer/Fall (161980): 2023
+* Chinook salmon - Puget Sound: Eastern Strait of Juan de Fuca Summer/Fall (161980): 2024
+* Chinook salmon - Puget Sound: Eastern Strait of Juan de Fuca Summer/Fall (161980): 2025
+* Chinook salmon - Puget Sound: Skokomish Summer/Fall (161980): 2019
+* Chinook salmon - Puget Sound: Skokomish Summer/Fall (161980): 2020
+* Chinook salmon - Puget Sound: Skokomish Summer/Fall (161980): 2021
+* Chinook salmon - Puget Sound: Skokomish Summer/Fall (161980): 2022
+* Chinook salmon - Puget Sound: Skokomish Summer/Fall (161980): 2023
+* Bigeye tuna - Eastern Pacific (172428): 2024
+* Mutton snapper - Southern Atlantic Coast / Gulf of Mexico (168849): 2024
+* Skipjack tuna - Eastern Pacific (172401): 2024
+
+### Time series added 
+
+* Chinook salmon - California Central Valley: Sacramento River Fall (161980): 2024
+* Mutton snapper - Southern Atlantic Coast / Gulf of Mexico (168849): 2024
+
 # stocksmart 0.0.57
 
 Data pull: March 11, 2025
