@@ -1,3 +1,29 @@
+# stocksmart 0.0.59
+
+Data pull: March 25, 2025
+
+### Summaries added 
+
+* Chinook salmon - Puget Sound: Cedar River Summer/Fall (161980): 2025
+* Chinook salmon - Washington Coast: Quinault Fall Hatchery (161980): 2025
+* Coho salmon - Oregon Production Index Area: Central California Coast (161977): 2025
+
+### Summaries removed 
+
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2012
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2013
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2014
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2015
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2016
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2017
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2018
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2019
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2020
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2021
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2022
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2023
+* Chinook salmon - Northern California Coast: California Coastal (161980): 2024
+
 # stocksmart 0.0.58
 
 Data pull: March 18, 2025
