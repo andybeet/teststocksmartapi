@@ -1,3 +1,20 @@
+# stocksmart 0.0.61
+
+Data pull: April 22, 2025
+
+### Summaries added 
+
+* Pollock - Gulf of Maine / Georges Bank (164727): 2024
+* Witch flounder - Northwestern Atlantic Coast (172873): 2024
+* Yellowtail flounder - Georges Bank (172909): 2024
+
+### Time series added 
+
+* Atlantic herring - Northwestern Atlantic Coast (161722): 2024
+* Atlantic surfclam - Mid-Atlantic Coast (80944): 2024
+* Black sea bass - Mid-Atlantic Coast (167687): 2024
+* Tilefish - Mid-Atlantic Coast (168546): 2024
+
 # stocksmart 0.0.60
 
 Data pull: April 15, 2025
