@@ -1,3 +1,17 @@
+# stocksmart 0.0.62
+
+Data pull: June 10, 2025
+
+### Summaries added 
+
+* Pacific chub mackerel - Pacific Coast (172412): 2025
+* Pacific sardine - Northern Subpopulation (161729): 2025
+
+### Time series added 
+
+* Pacific chub mackerel - Pacific Coast (172412): 2025
+* Pacific sardine - Northern Subpopulation (161729): 2025
+
 # stocksmart 0.0.61
 
 Data pull: April 22, 2025
