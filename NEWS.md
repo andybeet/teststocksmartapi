@@ -1,3 +1,35 @@
+# stocksmart 0.0.63
+
+Data pull: July 01, 2025
+
+### Summaries added 
+
+* Snow crab - Bering Sea (98428): 2024
+* Alaska skate - Bering Sea / Aleutian Islands (160939): 2024
+* Arrowtooth flounder - Bering Sea / Aleutian Islands (616029): 2024
+* Bering Sea / Aleutian Islands Blackspotted and Rougheye Rockfish Complex (NA): 2024
+* Bering Sea / Aleutian Islands Other Skates Complex (NA): 2024
+
+### Summaries removed 
+
+* Snow crab - Bering Sea (98428): 2019
+* Snow crab - Bering Sea (98428): 2020
+* Snow crab - Bering Sea (98428): 2023
+
+### Time series added 
+
+* Alaska skate - Bering Sea / Aleutian Islands (160939): 2024
+* Arrowtooth flounder - Bering Sea / Aleutian Islands (616029): 2024
+* Bering Sea / Aleutian Islands Blackspotted and Rougheye Rockfish Complex (NA): 2024
+* Bering Sea / Aleutian Islands Other Skates Complex (NA): 2024
+* Snow crab - Bering Sea (98428): 2024
+
+### Time series removed 
+
+* Snow crab - Bering Sea (98428): 2023
+* Snow crab - Bering Sea (98428): 2020
+* Snow crab - Bering Sea (98428): 2019
+
 # stocksmart 0.0.62
 
 Data pull: June 10, 2025
