@@ -1,3 +1,24 @@
+# stocksmart 0.0.65
+
+Data pull: August 05, 2025
+
+### Summaries added 
+
+* Alaska plaice - Bering Sea / Aleutian Islands (172901): 2024
+* Atka mackerel - Bering Sea / Aleutian Islands (167120): 2024
+* Walleye pollock - Southeast Gulf of Alaska (934083): 2024
+* Walleye pollock - Western / Central / West Yakutat Gulf of Alaska (934083): 2024
+* Chinook salmon - Puget Sound: Skagit Spring (161980): 2023
+* Chinook salmon - Puget Sound: Skagit Summer/Fall (161980): 2025
+* Chinook salmon - Puget Sound: Skokomish Summer/Fall (161980): 2025
+
+### Time series added 
+
+* Alaska plaice - Bering Sea / Aleutian Islands (172901): 2024
+* Atka mackerel - Bering Sea / Aleutian Islands (167120): 2024
+* Walleye pollock - Southeast Gulf of Alaska (934083): 2024
+* Walleye pollock - Western / Central / West Yakutat Gulf of Alaska (934083): 2024
+
 # stocksmart 0.0.64
 
 Data pull: July 29, 2025
