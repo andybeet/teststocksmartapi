@@ -1,3 +1,13 @@
+# stocksmart 0.0.67
+
+Data pull: August 19, 2025
+
+### Summaries added 
+
+* Puerto Rico Grouper Unit 6 (NA): 2014
+* St. Croix Grouper Unit 4 (NA): 2014
+* St. Thomas / St. John Grouper Unit 3 (NA): 2014
+
 # stocksmart 0.0.66
 
 Data pull: August 12, 2025
