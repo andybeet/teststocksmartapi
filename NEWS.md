@@ -1,3 +1,34 @@
+# stocksmart 0.0.68
+
+Data pull: August 26, 2025
+
+### Summaries added 
+
+* Rex sole - Eastern Gulf of Alaska (172978): 2021
+* Rex sole - Western / Central Gulf of Alaska (172978): 2021
+* Blueline tilefish - Southern Atlantic Coast (168543): 2025
+* Albacore - South Pacific (172419): 2024
+* Blue shark - North Pacific (160424): 2022
+
+### Summaries removed 
+
+* Rex sole - Eastern Gulf of Alaska (172978): 2022
+* Rex sole - Western / Central Gulf of Alaska (172978): 2022
+* Blueline tilefish - Southern Atlantic Coast (168543): 2024
+* Blue shark - North Pacific (160424): 2023
+
+### Time series added 
+
+* Blue shark - North Pacific (160424): 2022
+* Rex sole - Eastern Gulf of Alaska (172978): 2021
+* Rex sole - Western / Central Gulf of Alaska (172978): 2021
+
+### Time series removed 
+
+* Blue shark - North Pacific (160424): 2023
+* Rex sole - Eastern Gulf of Alaska (172978): 2022
+* Rex sole - Western / Central Gulf of Alaska (172978): 2022
+
 # stocksmart 0.0.67
 
 Data pull: August 19, 2025
