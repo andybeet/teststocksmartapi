@@ -1,3 +1,17 @@
+# stocksmart 0.0.70
+
+Data pull: October 07, 2025
+
+### Summaries added 
+
+* Bigeye tuna - Atlantic (172428): 2025
+* White marlin - Atlantic (768126): 2025
+
+### Time series added 
+
+* Bigeye tuna - Atlantic (172428): 2025
+* White marlin - Atlantic (768126): 2025
+
 # stocksmart 0.0.69
 
 Data pull: September 16, 2025
