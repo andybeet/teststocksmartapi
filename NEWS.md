@@ -1,3 +1,33 @@
+# stocksmart 0.0.72
+
+Data pull: November 04, 2025
+
+### Summaries added 
+
+* Scamp - Gulf of Mexico (167763): 2025
+* Atlantic salmon - Gulf of Maine (161996): 2010
+* Atlantic salmon - Gulf of Maine (161996): 2011
+* Atlantic salmon - Gulf of Maine (161996): 2012
+* Atlantic salmon - Gulf of Maine (161996): 2013
+* Atlantic salmon - Gulf of Maine (161996): 2014
+* Atlantic salmon - Gulf of Maine (161996): 2015
+* Pink salmon - Puget Sound (161975): 2025
+* Black sea bass - Southern Atlantic Coast (167687): 2025
+* Yellowtail snapper - Southern Atlantic Coast / Gulf of Mexico (168907): 2025
+
+### Time series added 
+
+* Atlantic salmon - Gulf of Maine (161996): 2015
+* Atlantic salmon - Gulf of Maine (161996): 2014
+* Atlantic salmon - Gulf of Maine (161996): 2013
+* Atlantic salmon - Gulf of Maine (161996): 2012
+* Atlantic salmon - Gulf of Maine (161996): 2011
+* Atlantic salmon - Gulf of Maine (161996): 2010
+* Black sea bass - Southern Atlantic Coast (167687): 2025
+* Pink salmon - Puget Sound (161975): 2025
+* Scamp - Gulf of Mexico (167763): 2025
+* Yellowtail snapper - Southern Atlantic Coast / Gulf of Mexico (168907): 2025
+
 # stocksmart 0.0.71
 
 Data pull: October 21, 2025
