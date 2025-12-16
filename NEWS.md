@@ -1,3 +1,15 @@
+# stocksmart 0.0.77
+
+Data pull: December 16, 2025
+
+### Summaries added 
+
+* White hake - Gulf of Maine / Georges Bank (164732): 2025
+
+### Time series added 
+
+* White hake - Gulf of Maine / Georges Bank (164732): 2025
+
 # stocksmart 0.0.76
 
 Data pull: December 09, 2025
