@@ -1,3 +1,27 @@
+# stocksmart 0.0.80
+
+Data pull: February 17, 2026
+
+### Summaries added 
+
+* Blue king crab - Pribilof Islands (97936): 2025
+* Blue king crab - Saint Matthew Island (97936): 2024
+* Red snapper - Southern Atlantic Coast (168853): 2024
+
+### Summaries removed 
+
+* Black sea bass - Mid-Atlantic Coast (167687): 2024
+
+### Time series added 
+
+* Blue king crab - Pribilof Islands (97936): 2025
+* Blue king crab - Saint Matthew Island (97936): 2024
+* Red snapper - Southern Atlantic Coast (168853): 2024
+
+### Time series removed 
+
+* Black sea bass - Mid-Atlantic Coast (167687): 2024
+
 # stocksmart 0.0.79
 
 Data pull: February 10, 2026
