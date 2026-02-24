@@ -1,3 +1,29 @@
+# stocksmart 0.0.81
+
+Data pull: February 24, 2026
+
+### Summaries added 
+
+* Red king crab - Bristol Bay (97935): 2024
+* Red king crab - Bristol Bay (97935): 2025
+* Red king crab - Pribilof Islands (97935): 2025
+* Southern Tanner crab - Bering Sea (98429): 2024
+* Southern Tanner crab - Bering Sea (98429): 2025
+* Dover sole - Gulf of Alaska (172887): 2025
+
+### Time series added 
+
+* Atlantic cod - Eastern Gulf of Maine (164712): 2024
+* Atlantic cod - Georges Bank (164712): 2024
+* Atlantic cod - Southern New England (164712): 2024
+* Atlantic cod - Western Gulf of Maine (164712): 2024
+* Dover sole - Gulf of Alaska (172887): 2025
+* Red king crab - Bristol Bay (97935): 2025
+* Red king crab - Bristol Bay (97935): 2024
+* Red king crab - Pribilof Islands (97935): 2025
+* Southern Tanner crab - Bering Sea (98429): 2025
+* Southern Tanner crab - Bering Sea (98429): 2024
+
 # stocksmart 0.0.80
 
 Data pull: February 17, 2026
