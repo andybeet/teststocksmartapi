@@ -1,3 +1,20 @@
+# stocksmart 0.0.82
+
+Data pull: March 03, 2026
+
+### Time series added 
+
+* American plaice - Gulf of Maine / Georges Bank (172877): 2024
+* Atlantic halibut - Northwestern Atlantic Coast (172933): 2024
+* Atlantic mackerel - Gulf of Maine / Cape Hatteras (172414): 2025
+* Black sea bass - Mid-Atlantic Coast (167687): 2025
+* Bluefish - Atlantic Coast (168559): 2025
+* Haddock - Gulf of Maine (164744): 2024
+* Winter flounder - Georges Bank (172905): 2025
+* Winter flounder - Gulf of Maine (172905): 2025
+* Yellowtail flounder - Georges Bank (172909): 2025
+* Yellowtail flounder - Southern New England / Mid-Atlantic (172909): 2025
+
 # stocksmart 0.0.81
 
 Data pull: February 24, 2026
