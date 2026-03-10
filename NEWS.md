@@ -1,3 +1,17 @@
+# stocksmart 0.0.83
+
+Data pull: March 10, 2026
+
+### Summaries added 
+
+* Yellowfin tuna - Eastern Pacific (172423): 2025
+
+### Time series added 
+
+* Acadian redfish - Gulf of Maine / Georges Bank (166774): 2025
+* Scup - Atlantic Coast (169182): 2025
+* Summer flounder - Mid-Atlantic Coast (172735): 2025
+
 # stocksmart 0.0.82
 
 Data pull: March 03, 2026
