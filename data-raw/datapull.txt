@@ -1,6 +1,6 @@
-2026-03-17 07:30:46
+2026-03-24 07:28:39
 Number of files read = 49
 number of rows of data object = 310221
 number of rows stocksmart data object = 310221
-number of rows of summary object = 3444
-number of rows stocksmart summary data object = 3444
+number of rows of summary object = 3446
+number of rows stocksmart summary data object = 3446
