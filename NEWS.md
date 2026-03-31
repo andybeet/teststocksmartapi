@@ -1,3 +1,18 @@
+# stocksmart 0.0.85
+
+Data pull: March 31, 2026
+
+### Summaries added 
+
+* Pacific hake - Pacific Coast (164792): 2025
+* Quillback rockfish - California (166726): 2025
+* Widow rockfish - Pacific Coast (166719): 2025
+
+### Time series added 
+
+* Pacific hake - Pacific Coast (164792): 2025
+* Quillback rockfish - California (166726): 2025
+
 # stocksmart 0.0.84
 
 Data pull: March 24, 2026
