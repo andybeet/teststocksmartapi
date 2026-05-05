@@ -1,3 +1,11 @@
+# stocksmart 0.0.87
+
+Data pull: May 05, 2026
+
+### Summaries added 
+
+* Black sea bass - Mid-Atlantic Coast (167687): 2024
+
 # stocksmart 0.0.86
 
 Data pull: April 14, 2026
