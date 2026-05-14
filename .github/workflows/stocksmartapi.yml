@@ -14,7 +14,8 @@ on:
     #- cron: "*/20 * * * *" # Every 20 minutes
     #- cron: "0 18 * * 0" # Every Sunday at 1300 hrs = 1800 GMT
     #- cron: "0 15 * * 2" # Every Tuesday at 1000 hrs = 1500 UTC
-
+  workflow_dispatch:
+    
 jobs:
   build:
     runs-on: ubuntu-latest
