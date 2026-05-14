@@ -122,7 +122,7 @@ jobs:
           to: andrew.beet@noaa.gov
 
           from: 'testapi Stocksmart GitHub <noreply@gmail.com>'
-          nvelope_from: ${{ secrets.MAIL_USERNAME }}
+          envelope_from: ${{ secrets.MAIL_USERNAME }}
 
           #body: file://${{github.workspace}}/data-raw/datapull.txt
 
