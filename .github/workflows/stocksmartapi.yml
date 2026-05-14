@@ -109,7 +109,7 @@ jobs:
 
       # Send email indicating if anything has changed
       - name: Send email
-        uses: dawidd6/action-send-mail@v3
+        uses: dawidd6/action-send-mail@v17
 
         with:
           server_address: smtp.gmail.com
@@ -121,7 +121,8 @@ jobs:
           subject: Github Actions job result
           to: andrew.beet@noaa.gov
 
-          from: testapi Stocksmart GitHub # OR 'Luke Skywalker <user@example.com>'
+          from: 'testapi Stocksmart GitHub <noreply@gmail.com>'
+          nvelope_from: ${{ secrets.MAIL_USERNAME }}
 
           #body: file://${{github.workspace}}/data-raw/datapull.txt
 
