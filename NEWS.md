@@ -1,3 +1,12 @@
+# stocksmart 0.0.89
+
+Data pull: May 14, 2026
+
+### Summaries added 
+
+* Brown shrimp - Gulf of Mexico (551570): 2026
+* White shrimp - Gulf of Mexico (551680): 2026
+
 # stocksmart 0.0.88
 
 Data pull: May 12, 2026
