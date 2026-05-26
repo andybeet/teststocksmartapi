@@ -1,3 +1,18 @@
+# stocksmart 0.0.90
+
+Data pull: May 26, 2026
+
+### Summaries added 
+
+* Yelloweye rockfish - Pacific Coast (166740): 2025
+
+### Time series added 
+
+* Haddock - Georges Bank (164744): 2024
+* Pollock - Gulf of Maine / Georges Bank (164727): 2024
+* Witch flounder - Northwestern Atlantic Coast (172873): 2024
+* Yelloweye rockfish - Pacific Coast (166740): 2025
+
 # stocksmart 0.0.89
 
 Data pull: May 14, 2026
