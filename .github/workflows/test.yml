@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
 
       - name: set up pandoc
         uses: r-lib/actions/setup-pandoc@v2
@@ -83,7 +83,7 @@ jobs:
       # Create text explaining differences and append to news.md and release notes
 
       - name: Send email
-        uses: dawidd6/action-send-mail@v3
+        uses: dawidd6/action-send-mail@v17
 
         with:
           server_address: smtp.gmail.com
