@@ -95,7 +95,8 @@ jobs:
           subject: Github Actions job result
           to: andrew.beet@noaa.gov
 
-          from: Stocksmart GitHub # OR 'Luke Skywalker <user@example.com>'
+          from: 'test Stocksmart GitHub <noreply@gmail.com>'
+          envelope_from: ${{ secrets.MAIL_USERNAME }}
 
           #body: ${{ github.repository }} test!
 
