@@ -1,3 +1,20 @@
+# stocksmart 0.0.95
+
+Data pull: September 15, 2026
+
+### Summaries added 
+
+* Caribbean spiny lobster - St. Thomas / St. John (97648): 2025
+* Bocaccio - Southern Pacific Coast (166733): 2025
+* Canary rockfish - Pacific Coast (166734): 2025
+* Darkblotched rockfish - Pacific Coast (166715): 2025
+
+### Time series added 
+
+* Bocaccio - Southern Pacific Coast (166733): 2025
+* Canary rockfish - Pacific Coast (166734): 2025
+* Darkblotched rockfish - Pacific Coast (166715): 2025
+
 # stocksmart 0.0.94
 
 Data pull: September 01, 2026
