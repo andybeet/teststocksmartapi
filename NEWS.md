@@ -1,3 +1,43 @@
+# stocksmart 0.0.96
+
+Data pull: September 29, 2026
+
+### Summaries added 
+
+* Golden king crab - Pribilof Islands (660179): 2023
+* Golden king crab - Pribilof Islands (660179): 2026
+* Pacific cod - Gulf of Alaska (164711): 2026
+* Aggregate Chinook Salmon Complex (161980): 2026
+* Aggregate Coho Salmon Complex (161977): 2026
+* Aggregate Other Sockeye Salmon Complex (161979): 2026
+* Sockeye salmon - Kasilof River (161979): 2026
+* Sockeye salmon - Kenai River Late Run (161979): 2026
+* Pacific hake - Pacific Coast (164792): 2026
+* Widow rockfish - Pacific Coast (166719): 2026
+* Bigeye tuna - Eastern Pacific (172428): 2026
+
+### Summaries removed 
+
+* Yellowedge grouper - Gulf of Mexico (167699): 2010
+* Black sea bass - Mid-Atlantic Coast (167687): 2024
+* Black sea bass - Mid-Atlantic Coast (167687): 2025
+
+### Time series added 
+
+* Aggregate Chinook Salmon Complex (161980): 2026
+* Aggregate Coho Salmon Complex (161977): 2026
+* Aggregate Other Sockeye Salmon Complex (161979): 2026
+* Pacific cod - Gulf of Alaska (164711): 2026
+* Pacific hake - Pacific Coast (164792): 2026
+* Sockeye salmon - Kasilof River (161979): 2026
+* Sockeye salmon - Kenai River Late Run (161979): 2026
+* Widow rockfish - Pacific Coast (166719): 2026
+
+### Time series removed 
+
+* Black sea bass - Mid-Atlantic Coast (167687): 2025
+* Yellowedge grouper - Gulf of Mexico (167699): 2010
+
 # stocksmart 0.0.95
 
 Data pull: September 15, 2026
