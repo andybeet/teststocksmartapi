@@ -1,3 +1,15 @@
+# stocksmart 0.0.97
+
+Data pull: October 13, 2026
+
+### Summaries added 
+
+* Dusky rockfish - Gulf of Alaska (644604): 2024
+
+### Time series added 
+
+* Dusky rockfish - Gulf of Alaska (644604): 2024
+
 # stocksmart 0.0.96
 
 Data pull: September 29, 2026
